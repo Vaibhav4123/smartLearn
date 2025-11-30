@@ -4,7 +4,7 @@ import { Camera, Pencil, Check, X } from "lucide-react";
 import axios from "axios";
 import { useAuth } from "../../context/AuthContext";
 
-const API_URL = `${import.meta.env.VITE_API_URL}/auth/update-profile`;
+const API_URL = `${import.meta.env.VITE_API_URL}api/auth/update-profile`;
 const LS_KEY = "smartlearn_user";
 const TOKEN_KEY = "smartlearn_token";
 

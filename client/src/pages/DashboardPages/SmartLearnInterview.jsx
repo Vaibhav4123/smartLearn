@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Sparkles, Loader2 } from "lucide-react";
 
+const API_URL = `${import.meta.env.VITE_API_URL}`;
+
 export default function SmartLearnInterviewUI() {
   const [stage, setStage] = useState("subject");
   const [subject, setSubject] = useState("");
@@ -48,7 +50,7 @@ export default function SmartLearnInterviewUI() {
     try {
       const token = localStorage.getItem("smartlearn_token");
 
-      const res = await fetch("http://localhost:5000/api/interview/ai/generate", {
+      const res = await fetch(`${API_URL}api/interview/ai/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -81,7 +83,7 @@ export default function SmartLearnInterviewUI() {
   try {
     const token = localStorage.getItem("smartlearn_token");  // <-- FIXED
 
-    const res = await fetch("http://localhost:5000/api/interview/geminiScoringAns", {
+    const res = await fetch(`${API_URL}api/interview/geminiScoringAns`, {
       method: "POST",
       headers: { 
         "Content-Type": "application/json",
@@ -137,7 +139,7 @@ export default function SmartLearnInterviewUI() {
     };
 
     try {
-      await fetch("http://localhost:5000/api/interview/save", {
+      await fetch(`${API_URL}api/interview/save`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

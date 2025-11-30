@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { Navigate, useNavigate } from "react-router-dom";
 const AuthContext = createContext();
 
-const API_URL = `${import.meta.env.VITE_API_URL}/auth`;
+const API_URL = `${import.meta.env.VITE_API_URL}api/auth`;
 
 export const AuthProvider = ({ children }) => {
   const navigate=useNavigate();

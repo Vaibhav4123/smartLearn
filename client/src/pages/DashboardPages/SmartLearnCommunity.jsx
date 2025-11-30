@@ -15,7 +15,7 @@ import {
   Check,
 } from "lucide-react";
 import axios from "axios";
-const API_BASE =  `${import.meta.env.VITE_API_URL}/community`;
+const API_BASE =  `${import.meta.env.VITE_API_URL}api/community`;
 const LS_KEY = "smartlearn_user";
 const TOKEN_KEY = "smartlearn_token";
 const DEFAULT_AVATAR = "https://cdn-icons-png.flaticon.com/512/149/149071.png";

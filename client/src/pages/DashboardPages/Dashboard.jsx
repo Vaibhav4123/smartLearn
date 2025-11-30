@@ -43,7 +43,7 @@ export default function Dashboard() {
       FETCH QUIZ & INTERVIEW ATTEMPTS
   ---------------------------------------- */
 
-  const API_URL = `${import.meta.env.VITE_API_URL}`;
+  const API_URL = `${import.meta.env.VITE_API_URL}api`;
 
   useEffect(() => {
     async function loadData() {

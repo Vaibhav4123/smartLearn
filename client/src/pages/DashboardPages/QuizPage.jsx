@@ -51,7 +51,7 @@ export default function SmartLearnQuiz() {
 
       const token = localStorage.getItem("smartlearn_token");
 
-      const res = await fetch(`${API_URL}/quiz/ai/generate`, {
+      const res = await fetch(`${API_URL}api/quiz/ai/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -140,7 +140,7 @@ export default function SmartLearnQuiz() {
     };
 
     try {
-      const res = await fetch(`${API_URL}/quiz/submit`, {
+      const res = await fetch(`${API_URL}api/quiz/submit`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
