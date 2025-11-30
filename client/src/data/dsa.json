@@ -1,0 +1,376 @@
+{
+  "Introduction to DSA": {
+    "title": "Introduction to DSA",
+    "description": "This chapter introduces Data Structures and Algorithms, their importance, how computers solve problems, and how to measure an algorithm’s efficiency.",
+    "sections": {
+      "1. What is DSA?": {
+        "details": [
+          "DSA stands for Data Structures and Algorithms.",
+          "Data Structures organize data; Algorithms process data.",
+          "Used in problem-solving, optimization, and system design."
+        ]
+      },
+      "2. Why Study DSA?": {
+        "details": [
+          "Efficient code improves performance and scalability.",
+          "Essential for technical interviews and competitive programming.",
+          "Used in real systems like OS, DBMS, and compilers."
+        ]
+      },
+      "3. Time & Space Complexity": {
+        "details": [
+          "Big-O notation measures worst-case performance.",
+          "Common complexities: O(1), O(log n), O(n), O(n log n), O(n²).",
+          "Space complexity measures memory usage."
+        ]
+      },
+      "4. Types of Algorithms": {
+        "details": [
+          "Divide and Conquer",
+          "Dynamic Programming",
+          "Greedy Algorithms",
+          "Backtracking",
+          "Brute Force"
+        ]
+      },
+      "summary": "Understanding complexities and algorithmic thinking is the foundation of learning DSA."
+    }
+  },
+
+  "Arrays": {
+    "title": "Arrays",
+    "description": "Arrays are linear data structures that store elements in contiguous memory locations.",
+    "sections": {
+      "1. Basics": {
+        "details": [
+          "Fixed-size collection of elements.",
+          "Index-based access with O(1) time.",
+          "Used for storing homogeneous data."
+        ]
+      },
+      "2. Common Operations": {
+        "details": [
+          "Insertions and deletions",
+          "Searching (linear, binary)",
+          "Updating values"
+        ]
+      },
+      "3. Sliding Window Technique": {
+        "details": [
+          "Used for subarray/substring problems.",
+          "Efficient for problems like max sum subarray, longest substring."
+        ]
+      },
+      "4. Two-Pointer Technique": {
+        "details": [
+          "Used for sorted arrays.",
+          "Solves problems like pair sum, triplets, removing duplicates."
+        ]
+      },
+      "summary": "Arrays are the most fundamental data structure, forming the base of many algorithms."
+    }
+  },
+
+  "Strings": {
+    "title": "Strings",
+    "description": "Strings represent sequences of characters and often require manipulation, searching, and pattern matching.",
+    "sections": {
+      "1. Basics": {
+        "details": [
+          "Immutable in many languages (like JavaScript, Java).",
+          "Support char-level operations."
+        ]
+      },
+      "2. Common Operations": {
+        "details": [
+          "Reversal, case conversion",
+          "Removing duplicates",
+          "Frequency counting"
+        ]
+      },
+      "3. Pattern Searching": {
+        "details": [
+          "Brute force search",
+          "KMP (Knuth-Morris-Pratt)",
+          "Rabin-Karp hashing"
+        ]
+      },
+      "4. Palindrome Problems": {
+        "details": [
+          "Expand around center",
+          "Two-pointer technique"
+        ]
+      },
+      "summary": "Strings require optimized algorithms for searching and pattern matching due to their large size in real-world apps."
+    }
+  },
+
+  "Linked Lists": {
+    "title": "Linked Lists",
+    "description": "Linked Lists store data in nodes connected with pointers, allowing dynamic memory usage.",
+    "sections": {
+      "1. Types of Linked Lists": {
+        "details": [
+          "Singly Linked List",
+          "Doubly Linked List",
+          "Circular Linked List"
+        ]
+      },
+      "2. Operations": {
+        "details": [
+          "Insertion at head, tail, middle",
+          "Deletion of a node",
+          "Reversing a linked list"
+        ]
+      },
+      "3. Use Cases": {
+        "details": [
+          "Stacks, Queues, Graph adjacency lists",
+          "Dynamic memory allocation"
+        ]
+      },
+      "summary": "Linked lists enable efficient insertion and deletion but are slower in random access."
+    }
+  },
+
+  "Stacks & Queues": {
+    "title": "Stacks & Queues",
+    "description": "Stacks follow LIFO and Queues follow FIFO; both are essential for scheduling, backtracking, and buffering.",
+    "sections": {
+      "1. Stack": {
+        "details": [
+          "Operations: push, pop, peek.",
+          "Applications: undo, call stack, parentheses matching."
+        ]
+      },
+      "2. Queue": {
+        "details": [
+          "Operations: enqueue, dequeue.",
+          "Applications: job scheduling, printers, BFS."
+        ]
+      },
+      "3. Variants": {
+        "details": [
+          "Deque — Double-ended queue.",
+          "Priority Queue — highest priority element first.",
+          "Circular Queue."
+        ]
+      },
+      "summary": "Stacks and queues model many real-world processes including scheduling and memory management."
+    }
+  },
+
+  "Trees": {
+    "title": "Trees",
+    "description": "Trees represent hierarchical structures and allow fast searching, sorting, and organizing of data.",
+    "sections": {
+      "1. Basics": {
+        "details": [
+          "Consist of nodes connected in parent-child structure.",
+          "Root node, leaf nodes, height, depth."
+        ]
+      },
+      "2. Binary Trees": {
+        "details": [
+          "Each node has at most two children.",
+          "Types: Full, Complete, Balanced trees."
+        ]
+      },
+      "3. Tree Traversal": {
+        "details": [
+          "DFS: Preorder, Inorder, Postorder.",
+          "BFS: Level-order traversal using queue."
+        ]
+      },
+      "4. Binary Search Tree (BST)": {
+        "details": [
+          "Left subtree < root < right subtree.",
+          "Supports efficient insertion, search, deletion."
+        ]
+      },
+      "summary": "Trees are essential for indexing, searching, and forming foundations of advanced structures."
+    }
+  },
+
+  "Graphs": {
+    "title": "Graphs",
+    "description": "Graphs represent interconnected data using vertices (nodes) and edges.",
+    "sections": {
+      "1. Graph Representation": {
+        "details": [
+          "Adjacency list",
+          "Adjacency matrix",
+          "Edge list"
+        ]
+      },
+      "2. Traversal Algorithms": {
+        "details": [
+          "BFS — Breadth-first search.",
+          "DFS — Depth-first search."
+        ]
+      },
+      "3. Shortest Path Algorithms": {
+        "details": [
+          "Dijkstra’s Algorithm",
+          "Bellman-Ford",
+          "Floyd-Warshall"
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Social networks",
+          "Routing algorithms",
+          "Recommendation systems"
+        ]
+      },
+      "summary": "Graphs solve real-world problems involving relationships, paths, and networks."
+    }
+  },
+
+  "Recursion & Backtracking": {
+    "title": "Recursion & Backtracking",
+    "description": "Recursion solves problems by calling itself, and backtracking explores all possibilities to find valid solutions.",
+    "sections": {
+      "1. What is Recursion?": {
+        "details": [
+          "A function calling itself until a base condition is met.",
+          "Used for tree traversals, divide & conquer."
+        ]
+      },
+      "2. Recursion Tree": {
+        "details": [
+          "Visual representation of recursive calls.",
+          "Helps analyze complexity."
+        ]
+      },
+      "3. Backtracking": {
+        "details": [
+          "Explores all possibilities and backtracks when invalid.",
+          "Used in N-Queens, Sudoku solver, permutations."
+        ]
+      },
+      "summary": "Recursion simplifies complex problems and backtracking finds solutions by exploring multiple paths."
+    }
+  },
+
+  "Dynamic Programming": {
+    "title": "Dynamic Programming",
+    "description": "DP optimizes recursive problems by storing results of subproblems — improving performance drastically.",
+    "sections": {
+      "1. What is DP?": {
+        "details": [
+          "Break problem into subproblems and store results.",
+          "Avoids repeated work (overlapping subproblems)."
+        ]
+      },
+      "2. Memoization": {
+        "details": [
+          "Top-down approach.",
+          "Store computed values in a dictionary/map."
+        ]
+      },
+      "3. Tabulation": {
+        "details": [
+          "Bottom-up approach.",
+          "Fill a DP table iteratively."
+        ]
+      },
+      "4. Classic DP Problems": {
+        "details": [
+          "Fibonacci",
+          "Knapsack",
+          "Longest Common Subsequence",
+          "Coin Change"
+        ]
+      },
+      "summary": "DP transforms exponential problems into polynomial time, making solutions efficient."
+    }
+  },
+
+  "Greedy Algorithms": {
+    "title": "Greedy Algorithms",
+    "description": "Greedy algorithms make the best choice at each step, aiming for an optimal global solution.",
+    "sections": {
+      "1. What is a Greedy Strategy?": {
+        "details": [
+          "Chooses locally optimal decisions.",
+          "Fast and simple but may not always be globally optimal."
+        ]
+      },
+      "2. Common Problems": {
+        "details": [
+          "Activity Selection",
+          "Huffman Coding",
+          "Minimum Spanning Tree (Kruskal/Prim)"
+        ]
+      },
+      "3. When Greedy Works": {
+        "details": [
+          "Works when the problem has a greedy-choice property.",
+          "Optimal substructure must exist."
+        ]
+      },
+      "summary": "Greedy algorithms efficiently solve many optimization problems with minimal complexity."
+    }
+  },
+
+  "Sorting Algorithms": {
+    "title": "Sorting Algorithms",
+    "description": "Sorting arranges data in ascending or descending order using efficient algorithms.",
+    "sections": {
+      "1. Comparison-Based Sorting": {
+        "details": [
+          "Merge Sort — O(n log n)",
+          "Quick Sort — O(n log n) average",
+          "Heap Sort — O(n log n)"
+        ]
+      },
+      "2. Non-Comparison Sorting": {
+        "details": [
+          "Counting Sort — O(n + k)",
+          "Radix Sort — multi-pass digit sorting"
+        ]
+      },
+      "3. Stability & In-Place Sorting": {
+        "details": [
+          "Stable sorts maintain order of equal elements.",
+          "In-place sorts use minimal extra memory."
+        ]
+      },
+      "summary": "Sorting is essential for searching, optimization, and efficient data organization."
+    }
+  },
+
+  "Searching Techniques": {
+    "title": "Searching Techniques",
+    "description": "Searching algorithms locate a specific item efficiently in linear or structured data.",
+    "sections": {
+      "1. Linear Search": {
+        "details": [
+          "Checks elements one by one.",
+          "O(n) time complexity."
+        ]
+      },
+      "2. Binary Search": {
+        "details": [
+          "Requires sorted array.",
+          "O(log n) — fast and efficient.",
+          "Uses mid, left, right pointers."
+        ]
+      },
+      "3. Tree Search": {
+        "details": [
+          "BST searching uses tree structure.",
+          "O(log n) for balanced trees."
+        ]
+      },
+      "4. Graph Search": {
+        "details": [
+          "BFS — shortest path in unweighted graph.",
+          "DFS — depth-based exploration."
+        ]
+      },
+      "summary": "Searching techniques help quickly locate data, enabling fast retrieval in applications."
+    }
+  }
+}

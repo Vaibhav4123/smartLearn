@@ -1,0 +1,263 @@
+{
+  "Logic & Propositions": {
+    "title": "Logic & Propositions",
+    "description": "This chapter introduces Boolean logic, statements, logical operations, and truth tables used in reasoning and computing.",
+    "sections": {
+      "1. What is a Proposition?": {
+        "details": [
+          "A proposition is a declarative sentence that is either true or false.",
+          "Examples: 'It is raining', '2 + 2 = 4'.",
+          "Propositions form the basis of mathematical logic."
+        ]
+      },
+      "2. Logical Connectives": {
+        "details": [
+          "Negation (¬P) flips truth value.",
+          "Conjunction (P ∧ Q) is true when both are true.",
+          "Disjunction (P ∨ Q) is true when at least one is true.",
+          "Implication (P → Q) and biconditional (P ↔ Q)."
+        ]
+      },
+      "3. Truth Tables": {
+        "details": [
+          "Truth tables show outcomes of logical expressions.",
+          "Used to evaluate validity of statements.",
+          "Essential for circuit design and programming."
+        ]
+      },
+      "4. Logical Equivalence": {
+        "details": [
+          "Two expressions are equivalent if they have identical truth tables.",
+          "Examples: ¬(P ∨ Q) = ¬P ∧ ¬Q (De Morgan’s Law)."
+        ]
+      },
+      "summary": "Logic and propositions form the foundation of reasoning, algorithms, and digital circuit design."
+    }
+  },
+
+  "Sets & Functions": {
+    "title": "Sets & Functions",
+    "description": "This chapter covers fundamental set operations, functions, mappings, domains, and ranges used across computer science.",
+    "sections": {
+      "1. Basic Set Concepts": {
+        "details": [
+          "A set is a collection of distinct elements.",
+          "Represented using curly braces: A = {1,2,3}.",
+          "Empty set denoted by ∅."
+        ]
+      },
+      "2. Set Operations": {
+        "details": [
+          "Union (A ∪ B) combines elements.",
+          "Intersection (A ∩ B) includes common elements.",
+          "Difference (A - B) removes shared elements.",
+          "Cartesian product (A × B) forms ordered pairs."
+        ]
+      },
+      "3. Functions": {
+        "details": [
+          "A function maps each element of domain to one element in codomain.",
+          "Injective, surjective, and bijective functions.",
+          "Used in programming, hashing, relations."
+        ]
+      },
+      "summary": "Sets and functions build foundational structures for algorithms, probability, and relational models."
+    }
+  },
+
+  "Relations": {
+    "title": "Relations",
+    "description": "Relations describe connections between elements of sets and are used in databases, ordering systems, and logic.",
+    "sections": {
+      "1. Definition of Relations": {
+        "details": [
+          "A relation is a subset of a Cartesian product A × B.",
+          "Represents pairing between two sets."
+        ]
+      },
+      "2. Types of Relations": {
+        "details": [
+          "Reflexive: every element relates to itself.",
+          "Symmetric: if aRb, then bRa.",
+          "Transitive: if aRb and bRc, then aRc.",
+          "Equivalence relations satisfy all three."
+        ]
+      },
+      "3. Partial Order Relations": {
+        "details": [
+          "Reflexive, antisymmetric, and transitive.",
+          "Examples: set inclusion, numeric ≤ ordering."
+        ]
+      },
+      "summary": "Relations define structured connections and support concepts like sorting, grouping, and database design."
+    }
+  },
+
+  "Combinatorics": {
+    "title": "Combinatorics",
+    "description": "Combinatorics deals with counting, arrangements, and selections, essential for probability and algorithm design.",
+    "sections": {
+      "1. Counting Principles": {
+        "details": [
+          "Rule of Sum and Rule of Product.",
+          "Used to calculate total outcomes in events."
+        ]
+      },
+      "2. Permutations": {
+        "details": [
+          "Ordered arrangements of objects.",
+          "Used when order matters.",
+          "Formula: n! / (n - r)!"
+        ]
+      },
+      "3. Combinations": {
+        "details": [
+          "Selections where order does not matter.",
+          "Formula: nCr = n! / (r!(n - r)!)."
+        ]
+      },
+      "summary": "Combinatorics helps calculate arrangements and choices used in probability, cryptography, and complexity theory."
+    }
+  },
+
+  "Probability": {
+    "title": "Probability",
+    "description": "Probability analyzes uncertainty using random variables, likelihoods, distributions, and events.",
+    "sections": {
+      "1. Basic Concepts": {
+        "details": [
+          "Probability measures the chance of an event.",
+          "Values range from 0 (impossible) to 1 (certain).",
+          "Sample space represents all possible outcomes."
+        ]
+      },
+      "2. Conditional Probability": {
+        "details": [
+          "Probability of event A given B has occurred.",
+          "Formula: P(A|B) = P(A ∩ B)/P(B)."
+        ]
+      },
+      "3. Random Variables": {
+        "details": [
+          "Variables whose values depend on outcomes of random events.",
+          "Discrete vs continuous random variables."
+        ]
+      },
+      "4. Distributions": {
+        "details": [
+          "Bernoulli, Binomial, Normal distributions.",
+          "Used in ML, statistics, simulations."
+        ]
+      },
+      "summary": "Probability models uncertainty and supports analytics, ML algorithms, and decision-making."
+    }
+  },
+
+  "Matrices": {
+    "title": "Matrices",
+    "description": "Matrices represent structured numerical data and support operations critical in graphics, ML, and linear algebra.",
+    "sections": {
+      "1. Matrix Basics": {
+        "details": [
+          "A matrix is a 2D array of numbers.",
+          "Used in transformations, equations, ML models."
+        ]
+      },
+      "2. Matrix Operations": {
+        "details": [
+          "Addition, subtraction, multiplication.",
+          "Scalar multiplication and transpose.",
+          "Determinants and inverses."
+        ]
+      },
+      "3. Applications": {
+        "details": [
+          "Graphics transformations.",
+          "Solving systems of linear equations.",
+          "Neural network weight calculations."
+        ]
+      },
+      "summary": "Matrices form the backbone of scientific computing, ML modeling, and geometric processing."
+    }
+  },
+
+  "Calculus Basics": {
+    "title": "Calculus Basics",
+    "description": "This chapter introduces limits, derivatives, and integrals essential for understanding change and optimization.",
+    "sections": {
+      "1. Limits": {
+        "details": [
+          "Describe behavior of functions as variables approach a value.",
+          "Foundation of derivatives."
+        ]
+      },
+      "2. Derivatives": {
+        "details": [
+          "Measure rate of change.",
+          "Used in ML optimization and physics."
+        ]
+      },
+      "3. Integrals": {
+        "details": [
+          "Measure area under curves.",
+          "Used in probability, physics, and cumulative functions."
+        ]
+      },
+      "summary": "Calculus explains continuous change and is widely used in ML, physics, and engineering."
+    }
+  },
+
+  "Linear Algebra": {
+    "title": "Linear Algebra",
+    "description": "Linear algebra focuses on vectors, matrices, and transformations essential in ML, graphics, and engineering.",
+    "sections": {
+      "1. Vectors": {
+        "details": [
+          "Represent direction and magnitude.",
+          "Used in physics, ML embeddings, geometry."
+        ]
+      },
+      "2. Matrix Transformations": {
+        "details": [
+          "Matrices transform vectors using multiplication.",
+          "Used in projections, rotations, scaling."
+        ]
+      },
+      "3. Eigenvalues & Eigenvectors": {
+        "details": [
+          "Solve Ax = λx.",
+          "Used in PCA, ML dimensionality reduction."
+        ]
+      },
+      "summary": "Linear Algebra powers modern ML, physics simulations, and 3D graphics computations."
+    }
+  },
+
+  "Graph Theory": {
+    "title": "Graph Theory",
+    "description": "Graph theory studies networks, connections, and traversal techniques used in social networks, routing, and algorithms.",
+    "sections": {
+      "1. What is a Graph?": {
+        "details": [
+          "A graph consists of vertices (nodes) and edges.",
+          "Represents relationships between entities."
+        ]
+      },
+      "2. Types of Graphs": {
+        "details": [
+          "Directed & undirected graphs.",
+          "Weighted & unweighted.",
+          "Trees, DAGs, bipartite graphs."
+        ]
+      },
+      "3. Traversal Algorithms": {
+        "details": [
+          "DFS explores deep paths first.",
+          "BFS explores level by level.",
+          "Used in routing, searching, crawling."
+        ]
+      },
+      "summary": "Graph theory enables understanding of networks, relationships, optimal paths, and tree structures."
+    }
+  }
+}

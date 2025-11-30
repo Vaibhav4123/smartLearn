@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "audit": "^0.0.6",
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.0",
+    "nodemailer": "^7.0.11",
+    "nodemon": "^3.1.11",
+    "npm": "^11.6.4"
+  }
+}

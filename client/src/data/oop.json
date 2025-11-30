@@ -1,0 +1,249 @@
+{
+  "Introduction to OOP": {
+    "title": "Introduction to OOP",
+    "description": "This chapter introduces Object-Oriented Programming, why it was created, and how it solves real software development problems.",
+    "sections": {
+      "1. What is OOP?": {
+        "details": [
+          "OOP stands for Object-Oriented Programming.",
+          "It models real-world entities as objects with data and behavior.",
+          "OOP makes code modular, maintainable, reusable, and scalable."
+        ]
+      },
+      "2. Why OOP?": {
+        "details": [
+          "Procedural programs become large and hard to maintain.",
+          "OOP organizes code around objects rather than functions.",
+          "Improves readability, reduces redundancy, and supports abstraction."
+        ]
+      },
+      "3. Real-World Applications": {
+        "details": [
+          "Banking systems (Accounts, Customers, Transactions).",
+          "Games (Player, Enemy, Weapons, Levels).",
+          "UI Applications (Windows, Buttons, Events)."
+        ]
+      },
+      "summary": "OOP solves complexity by organizing software into objects, enabling cleaner and more powerful program design."
+    }
+  },
+
+  "Classes & Objects": {
+    "title": "Classes & Objects",
+    "description": "Classes define the structure and behavior of objects, while objects are runtime instances of classes.",
+    "sections": {
+      "1. What is a Class?": {
+        "details": [
+          "A class is a blueprint for creating objects.",
+          "It contains attributes (variables) and methods (functions)."
+        ]
+      },
+      "2. What is an Object?": {
+        "details": [
+          "An object is an instance of a class created in memory.",
+          "Objects access methods and properties defined in the class."
+        ]
+      },
+      "3. Constructor": {
+        "details": [
+          "A special method used to initialize objects.",
+          "Automatically executes when an object is created."
+        ]
+      },
+      "4. Example": {
+        "code": "class Car { constructor(model) { this.model = model; } drive() { console.log('Driving'); } }"
+      },
+      "summary": "Classes define structure, and objects bring them to life by representing actual entities."
+    }
+  },
+
+  "Encapsulation": {
+    "title": "Encapsulation",
+    "description": "Encapsulation bundles data and methods together while restricting direct access to protect data integrity.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Encapsulation hides implementation details.",
+          "Prevents unauthorized modification of data.",
+          "Achieved using private variables and public methods."
+        ]
+      },
+      "2. Getters & Setters": {
+        "details": [
+          "Getters retrieve private data.",
+          "Setters update data with validation.",
+          "Ensures controlled access to class members."
+        ]
+      },
+      "3. Benefits": {
+        "details": [
+          "Improves security.",
+          "Prevents accidental data modification.",
+          "Encourages modular design."
+        ]
+      },
+      "summary": "Encapsulation protects internal object data using controlled access through methods."
+    }
+  },
+
+  "Inheritance": {
+    "title": "Inheritance",
+    "description": "Inheritance allows one class to acquire properties and methods of another class, enabling reusability and hierarchical design.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Child class inherits from parent class.",
+          "Reduces code duplication and increases reusability."
+        ]
+      },
+      "2. Types of Inheritance": {
+        "details": [
+          "Single inheritance.",
+          "Multilevel inheritance.",
+          "Hierarchical inheritance.",
+          "Multiple inheritance (supported via interfaces in some languages)."
+        ]
+      },
+      "3. Example": {
+        "code": "class Animal { speak() { console.log('Sound'); } } class Dog extends Animal { bark() { console.log('Bark'); } }"
+      },
+      "summary": "Inheritance helps build class hierarchies and reuse existing code efficiently."
+    }
+  },
+
+  "Polymorphism": {
+    "title": "Polymorphism",
+    "description": "Polymorphism means 'many forms' and allows the same method to behave differently depending on the object.",
+    "sections": {
+      "1. Method Overloading": {
+        "details": [
+          "Same method name, different parameters.",
+          "Handled at compile time (in languages like Java/C++)."
+        ]
+      },
+      "2. Method Overriding": {
+        "details": [
+          "Child class replaces parent class method with new behavior.",
+          "Supports runtime polymorphism."
+        ]
+      },
+      "3. Benefits": {
+        "details": [
+          "Improves flexibility.",
+          "Allows same interface with different behavior.",
+          "Simplifies code structure."
+        ]
+      },
+      "summary": "Polymorphism allows dynamic behavior and flexible method usage across class hierarchies."
+    }
+  },
+
+  "Abstraction": {
+    "title": "Abstraction",
+    "description": "Abstraction hides unnecessary details and exposes only essential features to the user.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Focuses on what an object does, not how.",
+          "Reduces programming complexity."
+        ]
+      },
+      "2. Abstract Classes": {
+        "details": [
+          "Cannot be instantiated.",
+          "Contain abstract methods that child classes must implement."
+        ]
+      },
+      "3. Benefits": {
+        "details": [
+          "Improves code clarity.",
+          "Encourages modular architecture."
+        ]
+      },
+      "summary": "Abstraction simplifies complex systems by only showing relevant details."
+    }
+  },
+
+  "Interfaces": {
+    "title": "Interfaces",
+    "description": "Interfaces define a contract that classes must follow, ensuring consistency across multiple implementations.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Interfaces specify methods without implementations.",
+          "Classes implement interfaces by defining the methods."
+        ]
+      },
+      "2. Multiple Interfaces": {
+        "details": [
+          "A class can implement multiple interfaces.",
+          "Helps achieve multiple inheritance in OOP."
+        ]
+      },
+      "3. Benefits": {
+        "details": [
+          "Ensures consistency.",
+          "Improves testability.",
+          "Supports plugin-like architectures."
+        ]
+      },
+      "summary": "Interfaces enforce structure and standardization for class behaviors."
+    }
+  },
+
+  "Exception Handling": {
+    "title": "Exception Handling",
+    "description": "Exception handling manages unexpected errors to prevent program crashes and maintain stable execution.",
+    "sections": {
+      "1. Try & Catch": {
+        "details": [
+          "try block contains risky code.",
+          "catch block handles errors gracefully.",
+          "prevents program interruption."
+        ]
+      },
+      "2. Finally Block": {
+        "details": [
+          "Executes always, even if exception occurs.",
+          "Used for cleanup like closing files or connections."
+        ]
+      },
+      "3. Custom Exceptions": {
+        "details": [
+          "Users can define personalized error types.",
+          "Improves debugging and clarity."
+        ]
+      },
+      "summary": "Exception handling improves reliability and ensures programs recover safely from errors."
+    }
+  },
+
+  "File Handling": {
+    "title": "File Handling",
+    "description": "File handling allows reading from and writing to files, essential for data storage, logs, and configuration.",
+    "sections": {
+      "1. Reading Files": {
+        "details": [
+          "Open file in read mode.",
+          "Read content line by line or all at once.",
+          "Handle file not found exceptions."
+        ]
+      },
+      "2. Writing Files": {
+        "details": [
+          "Create new files or append to existing ones.",
+          "Write strings, objects, or logs.",
+          "Close file streams after writing."
+        ]
+      },
+      "3. File Modes": {
+        "details": [
+          "Read mode (r).",
+          "Write mode (w).",
+          "Append mode (a)."
+        ]
+      },
+      "summary": "File handling is vital for persistent storage, logging, and configuration management in applications."
+    }
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "Introduction to OS": {
+    "title": "Introduction to Operating Systems",
+    "description": "This chapter explains what operating systems are, their purpose, components, and essential services used to manage hardware and software.",
+    "sections": {
+      "1. What is an Operating System?": {
+        "details": [
+          "An operating system (OS) is system software that controls hardware and provides essential services for applications.",
+          "It acts as a bridge between the user and the hardware.",
+          "Examples: Windows, Linux, macOS, Android, iOS."
+        ]
+      },
+      "2. Functions of OS": {
+        "details": [
+          "Process management",
+          "Memory management",
+          "File system management",
+          "Device and I/O management",
+          "Security and protection",
+          "User interface"
+        ]
+      },
+      "3. Types of Operating Systems": {
+        "details": [
+          "Batch OS",
+          "Time-sharing OS",
+          "Distributed OS",
+          "Embedded OS",
+          "Real-time OS"
+        ]
+      },
+      "4. OS Components": {
+        "details": [
+          "Kernel",
+          "Shell",
+          "System programs",
+          "Device drivers"
+        ]
+      },
+      "summary": "The OS is the core system software that manages resources, executes programs, and ensures efficient system operation."
+    }
+  },
+
+  "System Architecture": {
+    "title": "System Architecture",
+    "description": "This chapter explains the OS architecture including kernel types, system calls, and operating modes.",
+    "sections": {
+      "1. User Mode vs Kernel Mode": {
+        "details": [
+          "User mode runs applications with limited access.",
+          "Kernel mode has full control over hardware resources.",
+          "Mode switching occurs during system calls or interrupts."
+        ]
+      },
+      "2. System Calls": {
+        "details": [
+          "Interface between processes and OS kernel.",
+          "Used for file operations, process control, memory management, device handling.",
+          "Example categories: process, file, device, information, communication."
+        ]
+      },
+      "3. Monolithic Kernel": {
+        "details": [
+          "Entire OS runs in kernel space.",
+          "Fast performance but less modular.",
+          "Example: Linux."
+        ]
+      },
+      "4. Microkernel": {
+        "details": [
+          "Only essential services run in kernel mode.",
+          "More modular and secure but slower due to more system calls.",
+          "Example: Minix."
+        ]
+      },
+      "summary": "OS architecture determines how the system handles hardware, system calls, and core services efficiently."
+    }
+  },
+
+  "Processes & Threads": {
+    "title": "Processes & Threads",
+    "description": "This chapter explains processes, threads, their lifecycle, and how the OS manages concurrency.",
+    "sections": {
+      "1. What is a Process?": {
+        "details": [
+          "A process is a program in execution.",
+          "Contains code, data, stack, registers, and resources.",
+          "Managed using Process Control Block (PCB)."
+        ]
+      },
+      "2. Process States": {
+        "details": [
+          "New",
+          "Ready",
+          "Running",
+          "Waiting/Blocked",
+          "Terminated"
+        ]
+      },
+      "3. PCB (Process Control Block)": {
+        "details": [
+          "Stores process information: PID, state, registers, memory limits.",
+          "Used by OS for context switching."
+        ]
+      },
+      "4. Threads": {
+        "details": [
+          "Lightweight units of execution inside a process.",
+          "Share code and memory but have independent stacks.",
+          "Enable parallelism and faster execution."
+        ]
+      },
+      "5. Multithreading": {
+        "details": [
+          "Allows multiple threads to run within a process.",
+          "Improves performance on multi-core CPUs.",
+          "Used in servers, UIs, and real-time applications."
+        ]
+      },
+      "summary": "Processes and threads are fundamental units of execution managed by the OS to support multitasking."
+    }
+  },
+
+  "CPU Scheduling": {
+    "title": "CPU Scheduling",
+    "description": "This chapter covers CPU scheduling algorithms used to determine the order of process execution.",
+    "sections": {
+      "1. Scheduling Criteria": {
+        "details": [
+          "CPU utilization",
+          "Throughput",
+          "Turnaround time",
+          "Waiting time",
+          "Response time"
+        ]
+      },
+      "2. FCFS (First-Come First-Served)": {
+        "details": [
+          "Processes executed in the order they arrive.",
+          "Simple but suffers from convoy effect."
+        ]
+      },
+      "3. SJF (Shortest Job First)": {
+        "details": [
+          "Executes the process with the shortest burst time.",
+          "Optimal for minimizing waiting time.",
+          "Requires knowledge of burst time."
+        ]
+      },
+      "4. Round Robin": {
+        "details": [
+          "Each process gets a fixed time slice (quantum).",
+          "Ideal for time-sharing systems.",
+          "Fair but context-switching overhead is high."
+        ]
+      },
+      "5. Priority Scheduling": {
+        "details": [
+          "Processes assigned priorities.",
+          "Lower priority processes may starve.",
+          "Aging is used to prevent starvation."
+        ]
+      },
+      "summary": "CPU scheduling determines which process runs next to optimize performance and response time."
+    }
+  },
+
+  "Memory Management": {
+    "title": "Memory Management",
+    "description": "This chapter covers how the OS allocates memory, handles fragmentation, and manages processes in memory.",
+    "sections": {
+      "1. Memory Allocation": {
+        "details": [
+          "Fixed partitioning",
+          "Dynamic partitioning",
+          "Buddy system allocation"
+        ]
+      },
+      "2. Fragmentation": {
+        "details": [
+          "Internal fragmentation: unused space inside allocated memory.",
+          "External fragmentation: scattered free memory blocks."
+        ]
+      },
+      "3. Allocation Strategies": {
+        "details": [
+          "First Fit",
+          "Best Fit",
+          "Worst Fit"
+        ]
+      },
+      "summary": "Memory management ensures efficient allocation, reduces fragmentation, and optimizes process placement."
+    }
+  },
+
+  "Paging & Segmentation": {
+    "title": "Paging & Segmentation",
+    "description": "This chapter covers memory division techniques, page tables, segmentation, and TLB.",
+    "sections": {
+      "1. Paging": {
+        "details": [
+          "Divides memory into fixed-size pages.",
+          "Eliminates external fragmentation.",
+          "Page table stores mapping between logical and physical pages."
+        ]
+      },
+      "2. Page Table": {
+        "details": [
+          "Maintains virtual-to-physical memory mapping.",
+          "Large tables require multi-level paging."
+        ]
+      },
+      "3. TLB (Translation Lookaside Buffer)": {
+        "details": [
+          "Cache for page table entries.",
+          "Improves memory access speed."
+        ]
+      },
+      "4. Segmentation": {
+        "details": [
+          "Memory divided into variable-sized segments.",
+          "Based on logical program units like code, stack, data."
+        ]
+      },
+      "summary": "Paging and segmentation help manage memory efficiently using logical and physical mapping techniques."
+    }
+  },
+
+  "Virtual Memory": {
+    "title": "Virtual Memory",
+    "description": "This chapter explains virtual memory concepts such as page faults, swapping, and thrashing.",
+    "sections": {
+      "1. What is Virtual Memory?": {
+        "details": [
+          "Allows programs to use more memory than physically available.",
+          "Uses disk space to extend RAM."
+        ]
+      },
+      "2. Page Faults": {
+        "details": [
+          "Occurs when a required page is not in memory.",
+          "OS loads the page from disk into RAM."
+        ]
+      },
+      "3. Swapping": {
+        "details": [
+          "Moves inactive pages to disk to free RAM.",
+          "Improves multitasking performance."
+        ]
+      },
+      "4. Thrashing": {
+        "details": [
+          "Occurs when too many page faults happen.",
+          "System spends more time swapping than executing."
+        ]
+      },
+      "summary": "Virtual memory increases apparent RAM capacity and supports large applications efficiently."
+    }
+  },
+
+  "File System": {
+    "title": "File System",
+    "description": "This chapter explains how OS stores and organizes files using directories, inodes, and allocation techniques.",
+    "sections": {
+      "1. File Concepts": {
+        "details": [
+          "Files store user data like documents, images, videos.",
+          "File attributes include name, type, size, and permissions."
+        ]
+      },
+      "2. Directories": {
+        "details": [
+          "Provide hierarchical file organization.",
+          "Support single-level, two-level, and tree-structured directories."
+        ]
+      },
+      "3. Inodes": {
+        "details": [
+          "Data structure storing metadata like size, permissions, and pointers.",
+          "Used in UNIX/Linux systems."
+        ]
+      },
+      "4. Allocation Methods": {
+        "details": [
+          "Contiguous allocation",
+          "Linked allocation",
+          "Indexed allocation"
+        ]
+      },
+      "summary": "The file system organizes files, maintains metadata, and controls how data is stored on disks."
+    }
+  },
+
+  "Deadlocks": {
+    "title": "Deadlocks",
+    "description": "This chapter covers deadlock conditions, prevention, avoidance, detection, and recovery strategies.",
+    "sections": {
+      "1. What is a Deadlock?": {
+        "details": [
+          "A deadlock occurs when processes wait indefinitely for resources held by each other."
+        ]
+      },
+      "2. Conditions for Deadlock": {
+        "details": [
+          "Mutual Exclusion",
+          "Hold and Wait",
+          "No Preemption",
+          "Circular Wait"
+        ]
+      },
+      "3. Prevention": {
+        "details": [
+          "Eliminate one or more deadlock conditions.",
+          "Example: avoid hold and wait."
+        ]
+      },
+      "4. Avoidance (Banker’s Algorithm)": {
+        "details": [
+          "Checks safe state before resource allocation.",
+          "Used in systems with known resource requirements."
+        ]
+      },
+      "5. Detection & Recovery": {
+        "details": [
+          "Detection algorithms identify deadlocked processes.",
+          "Recovery includes killing processes or preempting resources."
+        ]
+      },
+      "summary": "Deadlock handling ensures processes do not block each other permanently in resource competition."
+    }
+  },
+
+  "Device Management": {
+    "title": "Device Management",
+    "description": "This chapter explains how OS handles hardware devices, drivers, interrupts, and I/O operations.",
+    "sections": {
+      "1. I/O Devices": {
+        "details": [
+          "Includes keyboards, printers, disks, mice, and network cards.",
+          "Devices are classified as input, output, or storage."
+        ]
+      },
+      "2. Device Drivers": {
+        "details": [
+          "Software that allows OS to communicate with hardware.",
+          "Each device has a specific driver."
+        ]
+      },
+      "3. Interrupts": {
+        "details": [
+          "Signal from hardware to CPU to gain attention.",
+          "Handled using interrupt service routines (ISRs)."
+        ]
+      },
+      "4. I/O Scheduling": {
+        "details": [
+          "Algorithms like FCFS, SSTF, SCAN, C-SCAN.",
+          "Optimizes disk access time."
+        ]
+      },
+      "summary": "Device management ensures efficient communication between hardware devices and the operating system."
+    }
+  }
+}

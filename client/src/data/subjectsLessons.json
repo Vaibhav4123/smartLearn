@@ -1,0 +1,117 @@
+{
+  "Web Development": [
+    "Introduction & Fundamentals",
+    "HTML Basics",
+    "CSS Fundamentals",
+    "JavaScript Essentials",
+    "DOM Manipulation",
+    "Responsive Web Design",
+    "React.js Fundamentals",
+    "Node.js Basics",
+    "REST APIs",
+    "Authentication & Security",
+    "Databases for Web Apps",
+    "Deployment & Hosting"
+  ],
+
+  "DBMS": [
+    "Introduction to Databases",
+    "Data Models",
+    "ER Model",
+    "Relational Model",
+    "SQL Basics",
+    "Joins & Subqueries",
+    "Normalization",
+    "Transactions",
+    "Indexing & Query Optimization",
+    "NoSQL Databases"
+  ],
+
+  "Operating Systems": [
+    "Introduction to OS",
+    "System Architecture",
+    "Processes & Threads",
+    "CPU Scheduling",
+    "Memory Management",
+    "Paging & Segmentation",
+    "Virtual Memory",
+    "File System",
+    "Deadlocks",
+    "Device Management"
+  ],
+
+  "Computer Networks": [
+    "Introduction to Networking",
+    "OSI Model",
+    "TCP/IP Architecture",
+    "IP Addressing & Subnetting",
+    "Routing Algorithms",
+    "Transport Layer: TCP vs UDP",
+    "Application Layer Protocols",
+    "Network Security"
+  ],
+
+  "DSA": [
+    "Introduction to DSA",
+    "Arrays",
+    "Strings",
+    "Linked Lists",
+    "Stacks & Queues",
+    "Trees",
+    "Graphs",
+    "Recursion & Backtracking",
+    "Dynamic Programming",
+    "Greedy Algorithms",
+    "Sorting Algorithms",
+    "Searching Techniques"
+  ],
+
+  "Machine Learning": [
+    "Introduction to Machine Learning",
+    "Types of Machine Learning",
+    "Data Preprocessing",
+    "Linear Regression",
+    "Logistic Regression",
+    "Decision Trees",
+    "Support Vector Machines",
+    "Clustering Algorithms",
+    "Model Evaluation",
+    "Neural Networks"
+  ],
+
+  "OOP": [
+    "Introduction to OOP",
+    "Classes & Objects",
+    "Encapsulation",
+    "Inheritance",
+    "Polymorphism",
+    "Abstraction",
+    "Interfaces",
+    "Exception Handling",
+    "File Handling"
+  ],
+
+  "Mathematics": [
+    "Logic & Propositions",
+    "Sets & Functions",
+    "Relations",
+    "Combinatorics",
+    "Probability",
+    "Matrices",
+    "Calculus Basics",
+    "Linear Algebra",
+    "Graph Theory"
+  ],
+
+  "Cloud Computing": [
+    "Cloud Fundamentals",
+    "Virtualization",
+    "SaaS, PaaS, IaaS",
+    "AWS Basics",
+    "Azure Basics",
+    "Containers & Docker",
+    "Kubernetes",
+    "Cloud Security",
+    "Serverless Computing"
+  ]
+}

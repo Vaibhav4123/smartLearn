@@ -1,0 +1,269 @@
+{
+  "Introduction to Networking": {
+    "title": "Introduction to Computer Networking",
+    "description": "This chapter introduces the basics of computer networks, types of networks, communication models, and key concepts required to understand data transmission.",
+    "sections": {
+      "1. What is a Network?": {
+        "details": [
+          "A computer network is a collection of interconnected devices that communicate and share resources.",
+          "Provides communication, file sharing, remote access, and data transfer.",
+          "Examples: the internet, LANs, WANs."
+        ]
+      },
+      "2. Types of Networks": {
+        "details": [
+          "PAN (Personal Area Network)",
+          "LAN (Local Area Network)",
+          "MAN (Metropolitan Area Network)",
+          "WAN (Wide Area Network)",
+          "Wireless Networks (WiFi, Bluetooth)"
+        ]
+      },
+      "3. Network Topologies": {
+        "details": [
+          "Bus — simple, single backbone cable.",
+          "Star — central hub connects all nodes.",
+          "Ring — nodes in circular form.",
+          "Mesh — every device connects to every device.",
+          "Hybrid — combination of multiple topologies."
+        ]
+      },
+      "4. Transmission Modes": {
+        "details": [
+          "Simplex — one-way communication (e.g., TV signal).",
+          "Half-duplex — both directions but not simultaneously (e.g., walkie-talkie).",
+          "Full-duplex — both directions simultaneously (e.g., phone call)."
+        ]
+      },
+      "summary": "Networking allows devices to communicate, share data, and connect globally using structured transmission methods."
+    }
+  },
+
+  "OSI Model": {
+    "title": "OSI Model",
+    "description": "This chapter explains the OSI reference model, a seven-layer architecture used to standardize network communication.",
+    "sections": {
+      "1. Overview of OSI Layers": {
+        "details": [
+          "Divides network communication into 7 layers.",
+          "Each layer has a specific function and interacts with adjacent layers."
+        ]
+      },
+      "2. Layer Functions": {
+        "details": [
+          "Physical — transmission of raw bits.",
+          "Data Link — frames, MAC addressing, error detection.",
+          "Network — routing, logical addressing (IP).",
+          "Transport — end-to-end delivery (TCP/UDP).",
+          "Session — manages sessions between applications.",
+          "Presentation — encryption, compression, translation.",
+          "Application — user-facing protocols like HTTP, FTP."
+        ]
+      },
+      "3. Advantages of OSI Model": {
+        "details": [
+          "Helps standardize networking protocols.",
+          "Provides clear separation of responsibilities.",
+          "Simplifies debugging and development."
+        ]
+      },
+      "summary": "The OSI model organizes digital communication into structured, logical layers that improve interoperability and understanding."
+    }
+  },
+
+  "TCP/IP Architecture": {
+    "title": "TCP/IP Architecture",
+    "description": "This chapter covers the 4-layer TCP/IP model used by modern internet communication.",
+    "sections": {
+      "1. Layers of TCP/IP": {
+        "details": [
+          "Network Interface — physical network hardware and drivers.",
+          "Internet Layer — IP addressing, routing.",
+          "Transport Layer — TCP, UDP for communication.",
+          "Application Layer — HTTP, DNS, FTP."
+        ]
+      },
+      "2. IP (Internet Protocol)": {
+        "details": [
+          "Connectionless protocol.",
+          "Routing packets across networks.",
+          "Used by routers to forward data."
+        ]
+      },
+      "3. TCP vs IP": {
+        "details": [
+          "IP handles packet delivery.",
+          "TCP ensures reliability using handshake and acknowledgements.",
+          "Together form a reliable communication system."
+        ]
+      },
+      "summary": "TCP/IP model powers the modern internet and simplifies data communication into four major layers."
+    }
+  },
+
+  "IP Addressing & Subnetting": {
+    "title": "IP Addressing & Subnetting",
+    "description": "This chapter explains IP addressing, IPv4 vs IPv6, subnetting, and network mask calculations.",
+    "sections": {
+      "1. IPv4 Addressing": {
+        "details": [
+          "32-bit address divided into four octets.",
+          "Example: 192.168.1.1",
+          "Includes public and private IP ranges."
+        ]
+      },
+      "2. IPv6 Addressing": {
+        "details": [
+          "128-bit address written in hexadecimal.",
+          "Provides a huge address space.",
+          "Supports autoconfiguration and better routing."
+        ]
+      },
+      "3. Subnetting": {
+        "details": [
+          "Dividing a larger network into smaller networks.",
+          "Subnet mask determines network and host parts.",
+          "Example mask: 255.255.255.0 (/24)"
+        ]
+      },
+      "4. CIDR (Classless Inter-Domain Routing)": {
+        "details": [
+          "More flexible than class-based addressing.",
+          "Notation like /24, /16, /8.",
+          "Reduces IP wastage and improves routing efficiency."
+        ]
+      },
+      "summary": "IP addressing and subnetting structure networks efficiently and enable proper routing across networks."
+    }
+  },
+
+  "Routing Algorithms": {
+    "title": "Routing Algorithms",
+    "description": "This chapter explains how routers determine the best path for data packets.",
+    "sections": {
+      "1. What is Routing?": {
+        "details": [
+          "Routing selects optimal paths for data packets.",
+          "Routers maintain routing tables."
+        ]
+      },
+      "2. Static vs Dynamic Routing": {
+        "details": [
+          "Static routing: manually configured, no auto-update.",
+          "Dynamic routing: updates automatically using algorithms."
+        ]
+      },
+      "3. Distance Vector Algorithms": {
+        "details": [
+          "Routers share distance information periodically.",
+          "Examples: RIP (Routing Information Protocol)."
+        ]
+      },
+      "4. Link State Algorithms": {
+        "details": [
+          "Routers share full network topology.",
+          "Examples: OSPF (Open Shortest Path First)."
+        ]
+      },
+      "summary": "Routing algorithms help routers efficiently forward packets and maintain network stability."
+    }
+  },
+
+  "Transport Layer: TCP vs UDP": {
+    "title": "Transport Layer — TCP vs UDP",
+    "description": "This chapter compares TCP and UDP, explaining reliability, speed, and use cases.",
+    "sections": {
+      "1. TCP (Transmission Control Protocol)": {
+        "details": [
+          "Connection-oriented protocol.",
+          "Ensures reliable delivery using acknowledgements.",
+          "Uses 3-way handshake.",
+          "Applications: web browsing, email, file transfer."
+        ]
+      },
+      "2. UDP (User Datagram Protocol)": {
+        "details": [
+          "Connectionless and faster than TCP.",
+          "No acknowledgement or retransmission.",
+          "Applications: gaming, video streaming, VoIP."
+        ]
+      },
+      "3. Key Differences": {
+        "details": [
+          "TCP = reliable, slower | UDP = fast, unreliable.",
+          "TCP performs congestion control; UDP does not."
+        ]
+      },
+      "summary": "The transport layer manages application communication by choosing between reliability (TCP) and speed (UDP)."
+    }
+  },
+
+  "Application Layer Protocols": {
+    "title": "Application Layer Protocols",
+    "description": "This chapter explains user-facing protocols that enable communication over the internet.",
+    "sections": {
+      "1. HTTP/HTTPS": {
+        "details": [
+          "Used for web browsing.",
+          "HTTPS encrypts data using SSL/TLS."
+        ]
+      },
+      "2. DNS (Domain Name System)": {
+        "details": [
+          "Converts domain names to IP addresses.",
+          "Works using hierarchical name servers."
+        ]
+      },
+      "3. FTP & SFTP": {
+        "details": [
+          "File Transfer Protocol for sending/receiving files.",
+          "SFTP adds encryption for secure transfer."
+        ]
+      },
+      "4. SMTP, POP3, IMAP": {
+        "details": [
+          "Email sending (SMTP).",
+          "Email receiving (POP3, IMAP)."
+        ]
+      },
+      "summary": "Application layer protocols power essential services like browsing, file transfer, and email communication."
+    }
+  },
+
+  "Network Security": {
+    "title": "Network Security",
+    "description": "This chapter explains threats, attacks, firewalls, encryption, and secure communication practices.",
+    "sections": {
+      "1. Common Threats": {
+        "details": [
+          "Malware",
+          "Phishing",
+          "DDoS attacks",
+          "Man-in-the-middle attacks"
+        ]
+      },
+      "2. Cryptography": {
+        "details": [
+          "Symmetric encryption (AES).",
+          "Asymmetric encryption (RSA).",
+          "Hashing (SHA-256)."
+        ]
+      },
+      "3. Firewalls": {
+        "details": [
+          "Filter incoming and outgoing traffic.",
+          "Protect internal networks from external threats."
+        ]
+      },
+      "4. Network Security Tools": {
+        "details": [
+          "IDS/IPS systems",
+          "VPNs",
+          "TLS/SSL certificates",
+          "Access control lists (ACLs)"
+        ]
+      },
+      "summary": "Network security protects systems, communication, and data from unauthorized access and attacks."
+    }
+  }
+}

@@ -1,0 +1,862 @@
+{
+  "Introduction & Fundamentals": {
+    "title": "Introduction & Fundamentals",
+    "description": "This chapter introduces the world of web development, how the internet works, and the foundations required to build modern websites.",
+    "sections": {
+      "1. What is Web Development?": {
+        "details": [
+          "Web development is the process of building websites and web applications.",
+          "It consists of frontend (UI), backend (logic), and full-stack development.",
+          "Web browsers display content using HTML, CSS, and JavaScript."
+        ]
+      },
+      "2. How the Internet Works": {
+        "details": [
+          "The web uses a client-server model.",
+          "Browsers send requests to servers using HTTP or HTTPS.",
+          "Servers respond with web pages, data, or media."
+        ]
+      },
+      "3. Frontend vs Backend": {
+        "details": [
+          "Frontend deals with UI—HTML, CSS, JS, React.",
+          "Backend handles APIs, databases, authentication—Node.js, Express, MongoDB.",
+          "Full-stack dev handles both sides."
+        ]
+      },
+      "4. Browser Rendering": {
+        "details": [
+          "Browsers convert HTML → DOM.",
+          "CSS → CSSOM.",
+          "JavaScript manipulates the DOM to update UI dynamically."
+        ]
+      },
+      "5. Developer Tools": {
+        "details": [
+          "VS Code, Git & GitHub, Chrome DevTools, Node.js, npm/yarn.",
+          "Understanding these tools increases developer productivity."
+        ]
+      },
+      "summary": "You now understand how the web works, differences between frontend and backend, and essential development tools."
+    }
+  },
+
+  "HTML Basics": {
+    "title": "HTML Basics",
+    "description": "HTML defines the structure of a webpage using elements, attributes, and semantic markup.",
+    "sections": {
+      "1. HTML Document Structure": {
+        "details": [
+          "HTML pages begin with <!DOCTYPE html>.",
+          "The <head> contains metadata, title, and linking CSS.",
+          "The <body> contains all visible elements."
+        ],
+        "code": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Document</title>\n</head>\n<body>\n</body>\n</html>"
+      },
+      "2. Tags, Attributes & Elements": {
+        "details": [
+          "HTML is made of nested elements.",
+          "Attributes add information such as id, class, src, alt.",
+          "<img src='...' alt='...'> tags show images."
+        ]
+      },
+      "3. Text Elements": {
+        "details": [
+          "<h1> to <h6> for headings.",
+          "<p> for paragraphs.",
+          "<a href=''> for links."
+        ]
+      },
+      "4. Lists & Tables": {
+        "details": [
+          "<ul> unordered lists.",
+          "<ol> ordered lists.",
+          "<table> for structured tabular data."
+        ]
+      },
+      "5. Forms": {
+        "details": [
+          "<input>, <textarea>, <select> allow user input.",
+          "Radio buttons, checkboxes, drop-downs, submit buttons.",
+          "Forms are essential for login, signup, search."
+        ]
+      },
+      "6. Semantic HTML": {
+        "details": [
+          "Use <header>, <section>, <article>, <nav>, <footer>.",
+          "Enhances SEO and accessibility.",
+          "Improves document structure readability."
+        ]
+      },
+      "7. Accessibility": {
+        "details": [
+          "Always use alt text for images.",
+          "Use labels for form inputs.",
+          "Keep headings in order."
+        ]
+      },
+      "summary": "HTML is the foundation of every webpage and defines the structure of your content."
+    }
+  },
+
+  "CSS Fundamentals": {
+    "title": "CSS Fundamentals",
+    "description": "CSS controls the appearance of HTML content including layout, colors, typography, animations, and responsive design.",
+    "sections": {
+      "1. What is CSS?": {
+        "details": [
+          "CSS stands for Cascading Style Sheets.",
+          "It defines style rules for HTML elements.",
+          "Styles cascade based on specificity and order."
+        ]
+      },
+      "2. Selectors": {
+        "details": [
+          "Element selectors: p {}",
+          "Class selectors: .container {}",
+          "ID selectors: #title {}",
+          "Pseudo-classes: :hover, :focus",
+          "Pseudo-elements: ::before, ::after"
+        ]
+      },
+      "3. Box Model": {
+        "details": [
+          "Every element is a box with margin, border, padding, and content.",
+          "Understanding the box model is essential for layout design."
+        ]
+      },
+      "4. Typography & Colors": {
+        "details": [
+          "font-size, font-family, line-height.",
+          "color, background-color, gradients.",
+          "Text spacing: letter-spacing, word-spacing."
+        ]
+      },
+      "5. Display Property": {
+        "details": [
+          "block, inline, inline-block.",
+          "flex, grid, none.",
+          "Critical for layout behavior."
+        ]
+      },
+      "6. Flexbox": {
+        "details": [
+          "Simplifies horizontal and vertical alignment.",
+          "Uses justify-content, align-items, flex-direction."
+        ]
+      },
+      "7. Grid": {
+        "details": [
+          "Two-dimensional layout system.",
+          "Uses grid-template-columns, auto-fit, minmax()."
+        ]
+      },
+      "8. Units": {
+        "details": [
+          "px (absolute), em/rem (relative), %, vw/vh (viewport).",
+          "Use responsive units for scalable UIs."
+        ]
+      },
+      "9. Transitions & Animations": {
+        "details": [
+          "Transitions animate change smoothly.",
+          "@keyframes create advanced animations."
+        ]
+      },
+      "10. Variables": {
+        "details": [
+          "CSS custom properties: --primary-color.",
+          "Useful for theme systems."
+        ]
+      },
+      "summary": "CSS transforms plain HTML into beautiful, responsive, and engaging user interfaces."
+    }
+  },
+
+  "JavaScript Essentials": {
+    "title": "JavaScript Essentials",
+    "description": "JavaScript enables interactivity, dynamic UI updates, and complex application logic.",
+    "sections": {
+      "1. Introduction": {
+        "details": [
+          "JavaScript is the programming language of the browser.",
+          "It powers dynamic pages, real-time updates, and modern web apps."
+        ]
+      },
+      "2. Variables": {
+        "details": [
+          "var (old), let (modern), const (constant).",
+          "Use let/const in modern development."
+        ]
+      },
+      "3. Data Types": {
+        "details": [
+          "Primitive: string, number, boolean, null, undefined.",
+          "Reference: objects, arrays, functions."
+        ]
+      },
+      "4. Functions": {
+        "details": [
+          "Regular functions and arrow functions.",
+          "Functions allow modular, reusable logic."
+        ]
+      },
+      "5. Conditionals": {
+        "details": [
+          "if/else statements.",
+          "switch for multiple conditions."
+        ]
+      },
+      "6. Loops": {
+        "details": [
+          "for, while, do-while.",
+          "Array loops: forEach, map, filter, reduce."
+        ]
+      },
+      "7. Objects & Arrays": {
+        "details": [
+          "Objects store key-value data.",
+          "Arrays store lists of items."
+        ]
+      },
+      "8. ES6 Features": {
+        "details": [
+          "Destructuring, spread operator, classes.",
+          "let/const, arrow functions, template literals."
+        ]
+      },
+      "9. Async Programming": {
+        "details": [
+          "Promises handle asynchronous tasks.",
+          "async/await makes async code easier."
+        ]
+      },
+      "summary": "JavaScript powers interactivity and dynamic behavior in every modern website and web application."
+    }
+  },
+
+    "DOM Manipulation": {
+    "title": "DOM Manipulation",
+    "description": "DOM Manipulation allows JavaScript to dynamically update the HTML structure, content, and styling of a webpage.",
+    "sections": {
+      "1. What is the DOM?": {
+        "details": [
+          "The DOM is a tree-like structure representing all elements on a webpage.",
+          "Every HTML tag becomes a JavaScript-accessible object.",
+          "JavaScript can modify content, styling, structure, and respond to user actions."
+        ]
+      },
+      "2. Selecting Elements": {
+        "details": [
+          "querySelector and querySelectorAll are modern selectors.",
+          "getElementById, getElementsByClassName, and getElementsByTagName are older but still useful."
+        ]
+      },
+      "3. Changing Text & HTML": {
+        "details": [
+          "innerText changes visible text.",
+          "textContent includes hidden text.",
+          "innerHTML replaces full HTML content — use carefully."
+        ]
+      },
+      "4. Styling Elements": {
+        "details": [
+          "element.style modifies inline CSS.",
+          "classList.add(), remove(), and toggle() apply CSS classes cleanly."
+        ]
+      },
+      "5. Creating Elements": {
+        "details": [
+          "Use document.createElement() to make new elements.",
+          "appendChild() or append() insert elements into the DOM."
+        ]
+      },
+      "6. Removing Elements": {
+        "details": [
+          "element.remove() deletes an element directly.",
+          "parent.removeChild(child) is the older method."
+        ]
+      },
+      "7. Event Handling": {
+        "details": [
+          "addEventListener handles click, input, submit, keydown, etc.",
+          "Event listeners create interactive UI behavior."
+        ]
+      },
+      "8. Event Bubbling & Capturing": {
+        "details": [
+          "Events travel from parent → child (capturing) or child → parent (bubbling).",
+          "stopPropagation() prevents event flow."
+        ]
+      },
+      "9. Working with Forms": {
+        "details": [
+          "input.value gets user input.",
+          "e.preventDefault() prevents page reload on form submit."
+        ]
+      },
+      "10. Attributes & Properties": {
+        "details": [
+          "getAttribute(), setAttribute(), removeAttribute().",
+          "Properties like checked, value, and placeholder modify behavior."
+        ]
+      },
+      "11. DOM Traversal": {
+        "details": [
+          "parentElement, children, nextElementSibling, previousElementSibling allow navigation in the DOM tree."
+        ]
+      },
+      "12. Cloning & Templates": {
+        "details": [
+          "cloneNode(true) duplicates elements with child nodes.",
+          "Useful for card systems, chat messages, todo lists."
+        ]
+      },
+      "13. Fetch & Update DOM": {
+        "details": [
+          "fetch() retrieves data from APIs.",
+          "DOM updates dynamically show content such as posts, products, or results."
+        ]
+      },
+      "14. Best Practices": {
+        "details": [
+          "Avoid frequent DOM queries; store references.",
+          "Use classList, not inline styles.",
+          "Avoid unsafe innerHTML to prevent XSS."
+        ]
+      },
+      "summary": "By mastering DOM manipulation, you can build dynamic, interactive websites and understand how modern frameworks work internally."
+    }
+  },
+
+  "Responsive Web Design": {
+    "title": "Responsive Web Design",
+    "description": "Responsive Web Design ensures web pages adjust beautifully across all screens—mobile, tablet, laptop, and desktop.",
+    "sections": {
+      "1. What Is Responsive Web Design?": {
+        "details": [
+          "RWD allows layouts to adapt to different screen sizes.",
+          "Uses fluid layouts, flexible images, and CSS media queries.",
+          "Eliminates need for separate mobile and desktop sites."
+        ]
+      },
+      "2. Mobile-First Approach": {
+        "details": [
+          "Start with mobile layout as the base.",
+          "Add desktop styling using min-width breakpoints.",
+          "Results in cleaner code and better performance."
+        ]
+      },
+      "3. Viewport Meta Tag": {
+        "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+        "details": [
+          "Ensures website scales properly on mobile devices.",
+          "Prevents zoomed-out content."
+        ]
+      },
+      "4. Responsive Units": {
+        "units": {
+          "%": "Defines width based on parent element.",
+          "em": "Relative to parent font size.",
+          "rem": "Relative to root font size.",
+          "vw": "1% of viewport width.",
+          "vh": "1% of viewport height.",
+          "clamp()": "Allows min, ideal, and max scaling values."
+        }
+      },
+      "5. Media Queries": {
+        "definition": "CSS rules that apply at specific screen sizes.",
+        "example": "@media (max-width: 768px) { ... }",
+        "common_breakpoints": {
+          "Phone": "max-width: 480px",
+          "Tablet": "max-width: 768px",
+          "Laptop": "max-width: 1024px",
+          "Desktop": "min-width: 1280px"
+        }
+      },
+      "6. Responsive Typography": {
+        "details": [
+          "Use rem and em instead of px.",
+          "Typography should scale smoothly across devices.",
+          "Maintain readable line spacing."
+        ]
+      },
+      "7. Flexbox for Responsive Layouts": {
+        "details": [
+          "Flexbox handles automatic resizing and alignment.",
+          "flex-wrap wraps elements on smaller screens."
+        ]
+      },
+      "8. CSS Grid for Complex Layouts": {
+        "details": [
+          "Grid handles two-dimensional layouts.",
+          "auto-fit and minmax() create responsive card layouts."
+        ]
+      },
+      "9. Responsive Images": {
+        "details": [
+          "Use max-width: 100% to prevent overflow.",
+          "srcset and sizes load correct images for each device."
+        ]
+      },
+      "10. Responsive Navigation": {
+        "details": [
+          "Use hamburger menus on mobile.",
+          "Use horizontal navbars on larger screens.",
+          "Off-canvas menus improve mobile UX."
+        ]
+      },
+      "11. Testing Responsiveness": {
+        "methods": [
+          "Use Chrome DevTools device mode.",
+          "Test rotation: portrait/landscape.",
+          "Test real devices when possible."
+        ]
+      },
+      "12. Common Responsive Patterns": [
+        "Fluid grids",
+        "Card layouts",
+        "Stacked mobile layout",
+        "Centered hero sections"
+      ],
+      "13. Best Practices": [
+        "Always use mobile-first CSS.",
+        "Avoid fixed pixel widths.",
+        "Use flexible units.",
+        "Ensure tap-friendly touch areas."
+      ],
+      "summary": "Responsive design ensures a consistent and usable experience on all devices."
+    }
+  },
+
+  "React.js Fundamentals": {
+    "title": "React.js Fundamentals",
+    "description": "React is a JavaScript library for building fast, scalable, component-based user interfaces.",
+    "sections": {
+      "1. What is React?": {
+        "details": [
+          "React builds Single Page Applications (SPAs).",
+          "Uses components to create reusable UI blocks.",
+          "Uses a virtual DOM for fast updates."
+        ]
+      },
+      "2. Components": {
+        "details": [
+          "Functional components are the standard.",
+          "Components return JSX—HTML-like syntax in JS.",
+          "Components can be reused across pages."
+        ]
+      },
+      "3. Props": {
+        "details": [
+          "Props pass data from parent to child.",
+          "Props are read-only.",
+          "Useful for dynamic rendering."
+        ]
+      },
+      "4. State Management": {
+        "details": [
+          "useState manages a component’s data.",
+          "State triggers UI re-renders.",
+          "Useful for toggles, modals, counters, inputs."
+        ]
+      },
+      "5. useEffect Hook": {
+        "details": [
+          "Runs side effects such as fetching data.",
+          "useEffect(() => { ... }, []); controls when it runs."
+        ]
+      },
+      "6. Lists & Keys": {
+        "details": [
+          "Render lists using .map().",
+          "Every list item needs a unique key."
+        ]
+      },
+      "7. Conditional Rendering": {
+        "details": [
+          "Use &&, ? :, and if statements to show/hide content."
+        ]
+      },
+      "8. Forms in React": {
+        "details": [
+          "Controlled components use state to track input values.",
+          "onChange updates state on typing."
+        ]
+      },
+      "9. React Router Basics": {
+        "details": [
+          "SPA navigation using <Routes> and <Route>.",
+          "useNavigate handles programmatic routing.",
+          "Dynamic routing with useParams."
+        ]
+      },
+      "summary": "React enables modular UI creation, predictable rendering, and scalable frontend architectures."
+    }
+  },
+
+  "Node.js Basics": {
+    "title": "Node.js Basics",
+    "description": "Node.js allows JavaScript to run on the server and powers modern backend development.",
+    "sections": {
+      "1. What is Node.js?": {
+        "details": [
+          "Node.js is a runtime built on Chrome's V8 engine.",
+          "Enables server-side JavaScript execution.",
+          "Uses non-blocking I/O and an event-driven model."
+        ]
+      },
+      "2. npm & Packages": {
+        "details": [
+          "npm manages libraries and dependencies.",
+          "package.json tracks project configuration.",
+          "Common packages: express, mongoose, dotenv."
+        ]
+      },
+      "3. Creating a Server": {
+        "details": [
+          "Express.js is the most popular Node framework.",
+          "A basic API includes routes, controllers, and middleware."
+        ],
+        "example": "const express = require('express'); const app = express(); app.listen(5000);"
+      },
+      "4. Middleware": {
+        "details": [
+          "Functions that modify request/response before reaching routes.",
+          "Examples: bodyParser, auth middleware, CORS."
+        ]
+      },
+      "5. Routing": {
+        "details": [
+          "app.get(), app.post(), app.put(), app.delete().",
+          "Routes handle API endpoints and responses."
+        ]
+      },
+      "6. Environment Variables": {
+        "details": [
+          "dotenv loads environment variables.",
+          "Used for database URLs, JWT secrets, API keys."
+        ]
+      },
+      "summary": "Node.js powers scalable servers and APIs using JavaScript on the backend."
+    }
+  },
+
+    "REST APIs": {
+    "title": "REST APIs",
+    "description": "REST (Representational State Transfer) is an architectural style for designing scalable and stateless web services using HTTP.",
+    "sections": {
+      "1. What is an API?": {
+        "details": [
+          "API stands for Application Programming Interface.",
+          "It allows two applications to communicate with each other.",
+          "Web APIs enable the frontend and backend to exchange data using JSON."
+        ]
+      },
+      "2. What is REST?": {
+        "details": [
+          "A set of rules for building scalable web services.",
+          "Uses stateless communication — each request is independent.",
+          "Uses HTTP methods like GET, POST, PUT, DELETE."
+        ]
+      },
+      "3. HTTP Methods": {
+        "details": [
+          "GET: Retrieve data.",
+          "POST: Create data.",
+          "PUT: Update data.",
+          "DELETE: Remove data."
+        ]
+      },
+      "4. Endpoints": {
+        "details": [
+          "Endpoints represent URLs for API actions.",
+          "Example: /api/users → list users.",
+          "Example: /api/users/:id → get single user."
+        ]
+      },
+      "5. Request & Response": {
+        "details": [
+          "Frontend sends a request to backend.",
+          "Backend returns JSON data.",
+          "Response includes status codes: 200, 404, 500."
+        ],
+        "example_response": "{ \"message\": \"Success\", \"data\": [...] }"
+      },
+      "6. Query Params vs URL Params": {
+        "details": [
+          "Query params: /api/products?category=shoes",
+          "URL params: /api/products/123",
+          "Query params filter data; URL params identify a resource."
+        ]
+      },
+      "7. JSON Data": {
+        "details": [
+          "APIs commonly exchange data in JSON format.",
+          "Easy to read and compatible with JavaScript."
+        ]
+      },
+      "8. Status Codes": {
+        "codes": {
+          "200": "Success",
+          "201": "Created",
+          "400": "Bad Request",
+          "401": "Unauthorized",
+          "404": "Not Found",
+          "500": "Server Error"
+        }
+      },
+      "9. API Testing Tools": {
+        "details": [
+          "Postman",
+          "Insomnia",
+          "Thunder Client",
+          "cURL"
+        ]
+      },
+      "10. Error Handling": {
+        "details": [
+          "Send meaningful error messages.",
+          "Use try/catch in Node.js.",
+          "Return appropriate status codes."
+        ]
+      },
+      "11. Pagination": {
+        "details": [
+          "Used when results are too large to send at once.",
+          "Common pattern: /api/products?page=1&limit=10"
+        ]
+      },
+      "12. CORS": {
+        "details": [
+          "Cross-Origin Resource Sharing.",
+          "Browsers restrict requests between different domains.",
+          "Express middleware: app.use(cors())."
+        ]
+      },
+      "summary": "REST APIs allow communication between frontend and backend using HTTP methods and JSON. They form the core of modern web applications."
+    }
+  },
+
+  "Authentication & Security": {
+    "title": "Authentication & Security",
+    "description": "Authentication verifies user identity, while security protects applications from attacks. This chapter teaches secure login systems and API protection methods.",
+    "sections": {
+      "1. What is Authentication?": {
+        "details": [
+          "Authentication verifies who the user is.",
+          "Common login methods: email/password, OAuth, biometrics.",
+          "Authorization determines what the user can access."
+        ]
+      },
+      "2. Password Hashing": {
+        "details": [
+          "Passwords should never be stored in plain text.",
+          "bcrypt hashes passwords securely.",
+          "Hashing adds salt to prevent reverse engineering."
+        ],
+        "example": "const hashed = await bcrypt.hash(password, 10);"
+      },
+      "3. JWT (JSON Web Tokens)": {
+        "details": [
+          "Used for user login sessions.",
+          "Contains encoded user ID and expiration time.",
+          "Stored in localStorage or cookies."
+        ],
+        "example_jwt": "{ \"id\": \"123\", \"exp\": \"timestamp\" }"
+      },
+      "4. Access Token vs Refresh Token": {
+        "details": [
+          "Access token: short-lived, used for API requests.",
+          "Refresh token: long-lived, used to generate new access tokens.",
+          "Improves security and scalability."
+        ]
+      },
+      "5. OAuth & Social Login": {
+        "details": [
+          "Login with Google, GitHub, Facebook, etc.",
+          "Tokens are verified with the provider.",
+          "Reduces user friction and increases security."
+        ]
+      },
+      "6. API Route Protection": {
+        "details": [
+          "Middleware verifies JWT before allowing access.",
+          "Ensures only authenticated users can access sensitive routes."
+        ]
+      },
+      "7. Common Security Threats": {
+        "XSS": "Cross-Site Scripting — injecting malicious scripts.",
+        "CSRF": "Cross-Site Request Forgery — forcing user actions.",
+        "SQL Injection": "Injecting harmful queries.",
+        "Brute Force": "Repeated login attempts.",
+        "Session Hijacking": "Stealing user tokens."
+      },
+      "8. Preventing Security Attacks": {
+        "details": [
+          "Validate all inputs.",
+          "Use prepared statements.",
+          "Set secure cookie flags.",
+          "Limit login attempts.",
+          "Escape user input in HTML."
+        ]
+      },
+      "9. Helmet Security": {
+        "details": [
+          "Helmet adds security headers in Express apps.",
+          "Prevents common exploits.",
+          "Usage: app.use(helmet())."
+        ]
+      },
+      "10. Rate Limiting": {
+        "details": [
+          "Prevents repeated abusive requests.",
+          "Useful for login and API endpoints.",
+          "Middleware example: express-rate-limit."
+        ]
+      },
+      "summary": "A secure application protects user data through authentication, hashing, token systems, and security best practices."
+    }
+  },
+
+    "Databases for Web Apps": {
+    "title": "Databases for Web Apps",
+    "description": "Databases store and manage application data. This chapter explains SQL, NoSQL, MongoDB, Mongoose, indexing, schema design, and real-world data structures.",
+    "sections": {
+      "1. What is a Database?": {
+        "details": [
+          "A database stores structured or unstructured data for applications.",
+          "Web apps use databases to store users, posts, products, orders, etc.",
+          "Databases can be cloud-based or local."
+        ]
+      },
+      "2. SQL vs NoSQL": {
+        "details": [
+          "SQL uses tables, rows, and schemas.",
+          "NoSQL uses documents, collections, and flexible structures.",
+          "SQL is good for relational data; NoSQL is good for rapid development."
+        ]
+      },
+      "3. MongoDB Basics": {
+        "details": [
+          "MongoDB stores data in JSON-like documents.",
+          "Collections contain multiple documents.",
+          "Schemas help structure data."
+        ],
+        "example": "{ \"name\": \"John\", \"age\": 25 }"
+      },
+      "4. CRUD Operations": {
+        "details": [
+          "Create → Insert new data.",
+          "Read → Retrieve data.",
+          "Update → Modify existing data.",
+          "Delete → Remove data."
+        ],
+        "example": "User.find(), User.create(), User.updateOne(), User.deleteOne()"
+      },
+      "5. Mongoose Models": {
+        "details": [
+          "Mongoose adds schema and validation to MongoDB.",
+          "Models represent database collections.",
+          "Use schemas to define required fields and data types."
+        ],
+        "example": "const UserSchema = new mongoose.Schema({ name: String });"
+      },
+      "6. Relations in NoSQL": {
+        "details": [
+          "Reference: store ObjectId of related document.",
+          "Embedding: store full sub-document.",
+          "Used for posts, comments, user-profiles."
+        ]
+      },
+      "7. Indexing": {
+        "details": [
+          "Indexes improve search speed.",
+          "Unique indexes prevent duplicate values.",
+          "Compound indexes optimize complex queries."
+        ]
+      },
+      "8. Database Security": {
+        "details": [
+          "Use environment variables for credentials.",
+          "Enable IP whitelisting for cloud DBs.",
+          "Never store passwords in plain text."
+        ]
+      },
+      "9. Real-World Examples": {
+        "examples": [
+          "Auth system: store user email & hashed password.",
+          "E-commerce: store product catalog & orders.",
+          "Social media: posts, likes, comments, followers."
+        ]
+      },
+      "summary": "Databases allow web applications to persist and query structured information efficiently and securely."
+    }
+  },
+
+  "Deployment & Hosting": {
+    "title": "Deployment & Hosting",
+    "description": "Deployment is the process of publishing your website or web app to the internet using cloud platforms, hosting services, and deployment tools.",
+    "sections": {
+      "1. What is Deployment?": {
+        "details": [
+          "Deployment makes your web app accessible online.",
+          "Frontend and backend require different hosting approaches.",
+          "Modern deployment is cloud-based and automated."
+        ]
+      },
+      "2. Frontend Deployment Options": {
+        "options": [
+          "Netlify — simple & fast for static sites.",
+          "Vercel — optimized for React/Next.js.",
+          "GitHub Pages — hosts static sites for free."
+        ]
+      },
+      "3. Backend Deployment Options": {
+        "options": [
+          "Render — Node.js hosting with databases.",
+          "Railway — modern serverless deployments.",
+          "Heroku — easy deployments (legacy free plan ended)."
+        ]
+      },
+      "4. Environment Variables": {
+        "details": [
+          "Used for API keys, DB URIs, JWT secrets.",
+          "Never commit secrets to GitHub.",
+          "Use .env files locally and cloud env settings online."
+        ]
+      },
+      "5. Connecting Frontend & Backend": {
+        "details": [
+          "Frontend calls backend using the deployed URL.",
+          "Use proxy for local development.",
+          "Enable CORS on backend servers."
+        ],
+        "example": "fetch('https://your-api.onrender.com/login')"
+      },
+      "6. Build Process": {
+        "details": [
+          "React apps require npm run build before deployment.",
+          "The build folder contains optimized HTML, CSS, and JS.",
+          "Cloud hosts serve the static build files."
+        ]
+      },
+      "7. CI/CD": {
+        "details": [
+          "Continuous Integration/Continuous Deployment automates builds.",
+          "GitHub Actions & Vercel automatically deploy on push.",
+          "Reduces manual deployment effort."
+        ]
+      },
+      "8. Production Debugging": {
+        "details": [
+          "Use logs to track errors.",
+          "Monitor CPU/RAM usage on server.",
+          "Inspect network requests for failures."
+        ]
+      },
+      "summary": "Deployment allows your web application to be used globally by hosting it on cloud platforms with secure, scalable configuration."
+    }
+  }
+
+}  

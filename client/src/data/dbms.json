@@ -1,0 +1,376 @@
+{
+  "Introduction to Databases": {
+    "title": "Introduction to Databases",
+    "description": "This chapter explains what databases are, why modern systems require them, and how DBMS improves data storage, retrieval, and management.",
+    "sections": {
+      "1. What is a Database?": {
+        "details": [
+          "A database is an organized collection of data stored electronically.",
+          "Databases help store information in a structured and efficient manner.",
+          "Used in banking, e-commerce, inventory systems, social media, and enterprise software."
+        ]
+      },
+      "2. Why Do We Need Databases?": {
+        "details": [
+          "To store large amounts of data efficiently.",
+          "To avoid redundancy and maintain data consistency.",
+          "To provide secure access to data with control mechanisms.",
+          "To support multi-user environments with concurrency control."
+        ]
+      },
+      "3. What is DBMS?": {
+        "details": [
+          "DBMS stands for Database Management System.",
+          "It provides tools to store, retrieve, update, and manage data.",
+          "Examples: MySQL, Oracle, MongoDB, PostgreSQL."
+        ]
+      },
+      "4. Advantages of DBMS": {
+        "details": [
+          "Reduces data redundancy.",
+          "Improves data consistency and integrity.",
+          "Provides backup, security, and recovery mechanisms.",
+          "Supports concurrent data access."
+        ]
+      },
+      "summary": "Databases are essential for modern applications, and DBMS provides the tools needed to manage data effectively."
+    }
+  },
+
+  "Data Models": {
+    "title": "Data Models",
+    "description": "This chapter covers different ways of organizing and structuring data inside a database system.",
+    "sections": {
+      "1. Introduction to Data Models": {
+        "details": [
+          "A data model defines how data is logically structured.",
+          "It also defines relationships, rules, and constraints."
+        ]
+      },
+      "2. Hierarchical Model": {
+        "details": [
+          "Represents data in a tree-like structure.",
+          "Each parent can have multiple children, but child has one parent.",
+          "Used in early mainframe systems."
+        ]
+      },
+      "3. Network Model": {
+        "details": [
+          "Based on graph structure with multiple parent-child relationships.",
+          "More flexible than hierarchical model.",
+          "Supports many-to-many relationships."
+        ]
+      },
+      "4. Relational Model": {
+        "details": [
+          "Data is stored in tables (rows and columns).",
+          "Most popular model used in SQL databases.",
+          "Uses keys to maintain relational integrity."
+        ]
+      },
+      "5. Object-Oriented Model": {
+        "details": [
+          "Data stored as objects similar to OOP concepts.",
+          "Supports inheritance, encapsulation, and polymorphism."
+        ]
+      },
+      "summary": "Data models define how information is organized and accessed within a DBMS."
+    }
+  },
+
+  "ER Model": {
+    "title": "ER Model",
+    "description": "This chapter explains entity-relationship modeling used for designing logical database structures.",
+    "sections": {
+      "1. Entities": {
+        "details": [
+          "An entity represents a real-world object.",
+          "Examples: Student, Course, Employee.",
+          "Entities become tables in relational databases."
+        ]
+      },
+      "2. Attributes": {
+        "details": [
+          "Attributes are properties of entities.",
+          "Example: Student has name, roll number, email.",
+          "Types: simple, composite, derived, multivalued."
+        ]
+      },
+      "3. Keys": {
+        "details": [
+          "Primary Key uniquely identifies an entity instance.",
+          "Candidate Keys are potential primary keys.",
+          "Foreign Key establishes relationships between entities."
+        ]
+      },
+      "4. Relationships": {
+        "details": [
+          "Associations between entities.",
+          "Types: One-to-One, One-to-Many, Many-to-Many.",
+          "Represented using diamonds in ER diagrams."
+        ]
+      },
+      "summary": "ER modeling visually represents entities, their attributes, and relationships for database design."
+    }
+  },
+
+  "Relational Model": {
+    "title": "Relational Model",
+    "description": "This chapter explains how data is stored as tables, relationships via keys, and constraints.",
+    "sections": {
+      "1. Tables and Relations": {
+        "details": [
+          "Tables consist of rows (tuples) and columns (attributes).",
+          "Each row represents a record; each column represents a field."
+        ]
+      },
+      "2. Primary Key": {
+        "details": [
+          "Uniquely identifies each row in the table.",
+          "Cannot contain NULL values."
+        ]
+      },
+      "3. Foreign Key": {
+        "details": [
+          "Used to link two related tables.",
+          "Maintains referential integrity."
+        ]
+      },
+      "4. Relational Constraints": {
+        "details": [
+          "Entity Integrity: Primary key cannot be null.",
+          "Referential Integrity: Foreign key must match a primary key.",
+          "Domain Constraint: Values must follow defined data type."
+        ]
+      },
+      "summary": "The relational model provides a structured and consistent framework for storing data using tables and constraints."
+    }
+  },
+
+  "SQL Basics": {
+    "title": "SQL Basics",
+    "description": "This chapter covers core SQL operations including data retrieval, insertion, updating, and deletion.",
+    "sections": {
+      "1. SELECT": {
+        "details": [
+          "Used to retrieve data from one or more tables.",
+          "Example: SELECT * FROM Students;"
+        ]
+      },
+      "2. INSERT": {
+        "details": [
+          "Adds new records into a table.",
+          "Example: INSERT INTO Students VALUES (...);"
+        ]
+      },
+      "3. UPDATE": {
+        "details": [
+          "Modifies existing records.",
+          "Example: UPDATE Students SET name='John' WHERE id=1;"
+        ]
+      },
+      "4. DELETE": {
+        "details": [
+          "Deletes specific records.",
+          "Example: DELETE FROM Students WHERE id=1;"
+        ]
+      },
+      "5. Filtering & Sorting": {
+        "details": [
+          "WHERE clause filters data.",
+          "ORDER BY sorts results.",
+          "LIMIT restricts number of results."
+        ]
+      },
+      "summary": "SQL provides powerful commands for querying and modifying relational data."
+    }
+  },
+
+  "Joins & Subqueries": {
+    "title": "Joins & Subqueries",
+    "description": "This chapter teaches how to combine data from multiple tables and use nested queries.",
+    "sections": {
+      "1. INNER JOIN": {
+        "details": [
+          "Returns rows with matching values in both tables.",
+          "Most commonly used join type."
+        ]
+      },
+      "2. LEFT JOIN": {
+        "details": [
+          "Returns all rows from the left table and matching rows from the right."
+        ]
+      },
+      "3. RIGHT JOIN": {
+        "details": [
+          "Returns all rows from the right table and matching rows from the left."
+        ]
+      },
+      "4. FULL JOIN": {
+        "details": [
+          "Returns all rows when there is a match in either table."
+        ]
+      },
+      "5. Subqueries": {
+        "details": [
+          "A query inside another SQL query.",
+          "Used in WHERE, SELECT, and FROM clauses.",
+          "Example: SELECT name FROM Students WHERE id IN (SELECT student_id FROM Marks WHERE score > 80);"
+        ]
+      },
+      "summary": "Joins and subqueries enable advanced data retrieval across multiple tables."
+    }
+  },
+
+  "Normalization": {
+    "title": "Normalization",
+    "description": "This chapter explains how to minimize redundancy and anomalies by organizing data efficiently.",
+    "sections": {
+      "1. First Normal Form (1NF)": {
+        "details": [
+          "No repeating groups.",
+          "Each field must have atomic (indivisible) values."
+        ]
+      },
+      "2. Second Normal Form (2NF)": {
+        "details": [
+          "Table must be in 1NF.",
+          "No partial dependency allowed."
+        ]
+      },
+      "3. Third Normal Form (3NF)": {
+        "details": [
+          "Must be in 2NF.",
+          "No transitive dependencies."
+        ]
+      },
+      "4. BCNF": {
+        "details": [
+          "Stronger form of 3NF.",
+          "Every determinant must be a candidate key."
+        ]
+      },
+      "summary": "Normalization reduces redundancy and improves data integrity in relational databases."
+    }
+  },
+
+  "Transactions": {
+    "title": "Transactions",
+    "description": "This chapter covers ACID properties, concurrency control, and transaction management.",
+    "sections": {
+      "1. What is a Transaction?": {
+        "details": [
+          "A sequence of operations performed as a single unit.",
+          "Either all operations succeed or none do."
+        ]
+      },
+      "2. ACID Properties": {
+        "details": [
+          "Atomicity — all or nothing.",
+          "Consistency — database stays valid.",
+          "Isolation — multiple transactions execute independently.",
+          "Durability — changes persist after commit."
+        ]
+      },
+      "3. Concurrency Control": {
+        "details": [
+          "Ensures correct results when multiple users access the database.",
+          "Techniques: locking, timestamp ordering, optimistic control."
+        ]
+      },
+      "4. Isolation Levels": {
+        "details": [
+          "Read Uncommitted",
+          "Read Committed",
+          "Repeatable Read",
+          "Serializable"
+        ]
+      },
+      "summary": "Transactions ensure reliability, accuracy, and safety of data editing operations."
+    }
+  },
+
+  "Indexing & Query Optimization": {
+    "title": "Indexing & Query Optimization",
+    "description": "This chapter explains how indexing speeds up queries and how DBMS optimizes SQL execution.",
+    "sections": {
+      "1. What is an Index?": {
+        "details": [
+          "Index is a data structure that speeds up search operations.",
+          "Works like an index in a book."
+        ]
+      },
+      "2. Types of Indexes": {
+        "details": [
+          "Primary Index",
+          "Secondary Index",
+          "Composite Index",
+          "Unique Index"
+        ]
+      },
+      "3. B-Tree Indexing": {
+        "details": [
+          "Most common indexing method.",
+          "Enables fast searching, insertion, and deletion."
+        ]
+      },
+      "4. Hash Indexing": {
+        "details": [
+          "Provides O(1) average lookup time.",
+          "Best for equality comparisons."
+        ]
+      },
+      "5. Query Optimization": {
+        "details": [
+          "DBMS analyzes queries using the query optimizer.",
+          "Avoid SELECT *.",
+          "Use indexes wisely.",
+          "Normalize data for faster joins."
+        ]
+      },
+      "summary": "Indexing significantly improves performance and helps the database execute queries efficiently."
+    }
+  },
+
+  "NoSQL Databases": {
+    "title": "NoSQL Databases",
+    "description": "This chapter covers document, key-value, graph, and column-based databases designed for large-scale applications.",
+    "sections": {
+      "1. What is NoSQL?": {
+        "details": [
+          "NoSQL stands for Not Only SQL.",
+          "Designed for horizontal scaling and flexible data.",
+          "Ideal for real-time, large-scale systems."
+        ]
+      },
+      "2. Document Stores": {
+        "details": [
+          "Examples: MongoDB, CouchDB.",
+          "Store data as JSON-like documents.",
+          "Support flexible schemas."
+        ]
+      },
+      "3. Key-Value Stores": {
+        "details": [
+          "Examples: Redis, DynamoDB.",
+          "Fastest among NoSQL types.",
+          "Used for caching and session storage."
+        ]
+      },
+      "4. Columnar Databases": {
+        "details": [
+          "Examples: Cassandra, HBase.",
+          "Store data column-wise for analytics workloads."
+        ]
+      },
+      "5. Graph Databases": {
+        "details": [
+          "Examples: Neo4j, ArangoDB.",
+          "Used for social networks, recommendation engines.",
+          "Represent relationships with nodes & edges."
+        ]
+      },
+      "summary": "NoSQL databases offer speed, flexibility, and scalability, making them ideal for modern large-scale applications."
+    }
+  }
+}

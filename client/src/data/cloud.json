@@ -1,0 +1,271 @@
+{
+  "Cloud Fundamentals": {
+    "title": "Cloud Fundamentals",
+    "description": "This chapter introduces the core concepts of cloud computing, its benefits, characteristics, and deployment models.",
+    "sections": {
+      "1. What is Cloud Computing?": {
+        "details": [
+          "Cloud computing provides on-demand access to computing resources over the internet.",
+          "Users access storage, servers, databases, networking, and software without managing hardware.",
+          "Cloud enables pay-as-you-go pricing and global scalability."
+        ]
+      },
+      "2. Benefits of Cloud": {
+        "details": [
+          "Cost-effective: no hardware purchases.",
+          "Scalability: scale up/down as needed.",
+          "High availability and global distribution.",
+          "Security and automatic updates."
+        ]
+      },
+      "3. Characteristics of Cloud": {
+        "details": [
+          "On-demand self-service.",
+          "Broad network access.",
+          "Resource pooling.",
+          "Rapid elasticity.",
+          "Measured service (pay for what you use)."
+        ]
+      },
+      "4. Deployment Models": {
+        "details": [
+          "Public Cloud — AWS, Azure, GCP.",
+          "Private Cloud — internal to an organization.",
+          "Hybrid Cloud — combination of public and private.",
+          "Community Cloud — shared by organizations with common goals."
+        ]
+      },
+      "summary": "Cloud computing provides scalable, cost-effective, and reliable computing resources accessible globally."
+    }
+  },
+
+  "Virtualization": {
+    "title": "Virtualization",
+    "description": "Virtualization allows multiple virtual machines or containers to run on a single physical machine using hypervisors.",
+    "sections": {
+      "1. What is Virtualization?": {
+        "details": [
+          "Virtualization abstracts hardware into virtual environments.",
+          "Multiple OS instances share underlying physical hardware."
+        ]
+      },
+      "2. Hypervisors": {
+        "details": [
+          "Type 1 (Bare-metal): runs directly on hardware. Examples: VMware ESXi, Microsoft Hyper-V.",
+          "Type 2 (Hosted): runs on top of an OS. Examples: VirtualBox, VMware Workstation."
+        ]
+      },
+      "3. Virtual Machines": {
+        "details": [
+          "VMs contain OS, applications, and virtual hardware.",
+          "Offer high isolation but require more resources."
+        ]
+      },
+      "4. Containerization": {
+        "details": [
+          "Containers share the host OS kernel.",
+          "Lightweight, fast to start, ideal for microservices.",
+          "Docker popularized container adoption."
+        ]
+      },
+      "summary": "Virtualization enables efficient resource use, multi-OS environments, and the foundation for cloud computing."
+    }
+  },
+
+  "SaaS, PaaS, IaaS": {
+    "title": "SaaS, PaaS, IaaS",
+    "description": "This chapter explains the three major cloud service delivery models used to provide software, platforms, and infrastructure.",
+    "sections": {
+      "1. Software as a Service (SaaS)": {
+        "details": [
+          "Software delivered via the internet.",
+          "Examples: Gmail, Netflix, Salesforce.",
+          "No installation or maintenance required."
+        ]
+      },
+      "2. Platform as a Service (PaaS)": {
+        "details": [
+          "Provides tools to build, deploy, and manage apps.",
+          "Examples: Firebase, Heroku, AWS Elastic Beanstalk.",
+          "Developers focus on code, not infrastructure."
+        ]
+      },
+      "3. Infrastructure as a Service (IaaS)": {
+        "details": [
+          "Virtual servers, networking, storage on demand.",
+          "Examples: AWS EC2, Azure VM, Google Compute Engine."
+        ]
+      },
+      "summary": "Cloud service models provide different levels of abstraction to support development, deployment, and management."
+    }
+  },
+
+  "AWS Basics": {
+    "title": "AWS Basics",
+    "description": "This chapter covers essential AWS cloud services used for compute, storage, and identity management.",
+    "sections": {
+      "1. AWS Compute (EC2)": {
+        "details": [
+          "EC2 provides scalable virtual servers.",
+          "Supports Linux/Windows instances, auto-scaling, load balancing."
+        ]
+      },
+      "2. AWS Storage (S3)": {
+        "details": [
+          "Simple Storage Service for object storage.",
+          "Durable, scalable, used for backups, media, static websites."
+        ]
+      },
+      "3. Serverless (Lambda)": {
+        "details": [
+          "Run code without managing servers.",
+          "Pay only for execution time.",
+          "Supports Node.js, Python, Java, Go, etc."
+        ]
+      },
+      "4. IAM (Identity & Access Management)": {
+        "details": [
+          "Manages users, roles, and permissions.",
+          "Follows least-privilege security model."
+        ]
+      },
+      "summary": "AWS provides robust compute, storage, and identity services used in modern cloud applications."
+    }
+  },
+
+  "Azure Basics": {
+    "title": "Azure Basics",
+    "description": "Microsoft Azure offers cloud compute, storage, networking, and AI tools for enterprise workloads.",
+    "sections": {
+      "1. Azure Compute Services": {
+        "details": [
+          "Virtual Machines for scalable compute.",
+          "App Service for hosting web apps.",
+          "Azure Functions for serverless workloads."
+        ]
+      },
+      "2. Azure Storage": {
+        "details": [
+          "Blob Storage for unstructured data.",
+          "Queue Storage for messaging.",
+          "File and Table Storage services."
+        ]
+      },
+      "summary": "Azure enables enterprises to deploy scalable applications with integrated cloud tools and services."
+    }
+  },
+
+  "Containers & Docker": {
+    "title": "Containers & Docker",
+    "description": "This chapter introduces Docker containers, images, layers, and registries used for modern DevOps and deployment.",
+    "sections": {
+      "1. What is a Container?": {
+        "details": [
+          "Lightweight environment packaging an application and dependencies.",
+          "Faster and more efficient than VMs."
+        ]
+      },
+      "2. Docker Images": {
+        "details": [
+          "Images contain the app environment.",
+          "Built using Dockerfile instructions.",
+          "Images are layered for efficiency."
+        ]
+      },
+      "3. Docker Containers": {
+        "details": [
+          "Containers run images as isolated processes.",
+          "Support portability across environments."
+        ]
+      },
+      "4. Docker Registries": {
+        "details": [
+          "Used to store and share images.",
+          "Examples: Docker Hub, AWS ECR, GitHub Packages."
+        ]
+      },
+      "summary": "Docker simplifies development, packaging, and deployment using standardized container environments."
+    }
+  },
+
+  "Kubernetes": {
+    "title": "Kubernetes",
+    "description": "Kubernetes (K8s) is a container orchestration platform used to manage clusters, deployments, and scaling.",
+    "sections": {
+      "1. Kubernetes Architecture": {
+        "details": [
+          "Master node manages cluster state.",
+          "Worker nodes run container workloads.",
+          "Components: API server, scheduler, controller, kubelet."
+        ]
+      },
+      "2. Pods & Deployments": {
+        "details": [
+          "Pod: smallest deployable unit in K8s.",
+          "Deployment manages pod scaling and rolling updates."
+        ]
+      },
+      "3. Services": {
+        "details": [
+          "Expose pods internally or externally.",
+          "Types: ClusterIP, NodePort, LoadBalancer."
+        ]
+      },
+      "summary": "Kubernetes automates deployment, scaling, and management of distributed containerized applications."
+    }
+  },
+
+  "Cloud Security": {
+    "title": "Cloud Security",
+    "description": "This chapter covers essential cloud security practices including IAM, encryption, and network protection.",
+    "sections": {
+      "1. Identity & Access Management": {
+        "details": [
+          "Use roles and policies with least-privilege access.",
+          "Multi-factor authentication improves security."
+        ]
+      },
+      "2. Data Encryption": {
+        "details": [
+          "Encrypt data at rest and in transit.",
+          "Use KMS for key management."
+        ]
+      },
+      "3. Network Security": {
+        "details": [
+          "Firewalls, VPCs, subnets, and security groups.",
+          "Protect workloads from unauthorized access."
+        ]
+      },
+      "summary": "Cloud security relies on access control, encryption, secure networks, and continuous monitoring."
+    }
+  },
+
+  "Serverless Computing": {
+    "title": "Serverless Computing",
+    "description": "Serverless computing executes code without provisioning or managing servers, reducing operational overhead.",
+    "sections": {
+      "1. What is Serverless?": {
+        "details": [
+          "Infrastructure is abstracted away.",
+          "Automatically scales based on traffic.",
+          "Ideal for event-driven applications."
+        ]
+      },
+      "2. Function-as-a-Service (FaaS)": {
+        "details": [
+          "AWS Lambda, Azure Functions, Google Cloud Functions.",
+          "You only pay when functions run.",
+          "Stateless, fast, and scalable execution."
+        ]
+      },
+      "3. Serverless Use Cases": {
+        "details": [
+          "APIs, automation scripts, ML inference, real-time notifications.",
+          "Backend for mobile/web apps."
+        ]
+      },
+      "summary": "Serverless simplifies deployment with auto-scaling, low cost, and minimal server management."
+    }
+  }
+}

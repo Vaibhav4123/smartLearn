@@ -1,0 +1,200 @@
+{
+  "Introduction & Fundamentals": "This chapter introduces the basics of the subject and its importance in real-world applications. You will learn what the domain covers, its use cases, and why it matters.",
+  
+  "HTML Basics": "HTML (HyperText Markup Language) is the structure and foundation of every webpage. This chapter teaches you how browsers interpret HTML and how to create clean, semantic, and accessible pages.\n\n1. HTML Document Structure:\n- <!DOCTYPE html>, <html>, <head>, <body>\n- How browsers parse HTML\n- Role of metadata, title, charset, viewport\n\n2. Tags, Attributes, and Elements:\n- Opening/closing tags\n- Self-closing tags\n- Attributes like src, href, alt, id, class\n\n3. Headings, Paragraphs, Images, Links:\n- <h1> to <h6> for structured titles\n- <p> for text content\n- <img> with alt text for accessibility\n- <a> for links with target options\n\n4. Lists and Tables:\n- <ul> and <ol> for lists\n- <table>, <tr>, <th>, <td> for tabular data\n\n5. Forms:\n- Inputs, textarea, select, radio buttons, checkboxes\n- Buttons and form submission basics\n\n6. Semantic HTML:\n- <header>, <nav>, <section>, <article>, <footer>\n- Why semantic structure matters for screen readers and SEO\n\n7. Accessibility Basics:\n- Alt text, labels, proper headings\n- Keyboard navigation and ARIA basics\n\n8. SEO-Friendly Structure:\n- Meta tags, semantic elements, descriptive content\n- Clean links, optimized images\n\nBy the end of this chapter, you will be able to structure complete HTML pages that are clean, accessible, SEO-friendly, and ready for styling and interactivity.",
+  
+  "CSS Fundamentals": "CSS (Cascading Style Sheets) defines how HTML elements look and feel in a web page. This chapter teaches layout, styling, units, animations, and responsive design.\n\n1. What is CSS?\nCSS controls colors, spacing, fonts, layout, and animations. It is applied inline, internally in <style> tags, or externally using a .css file.\n\n2. Selectors:\nCSS selectors target elements using tag names, classes, IDs, attributes, pseudo-classes (:hover, :focus), and pseudo-elements (::before, ::after).\n\n3. Box Model:\nEach HTML element is a box with content, padding, border, and margin. Understanding this model is essential for spacing and layouts.\n\n4. Colors, Typography & Backgrounds:\nControl text styles, fonts, sizes, line heights, background colors, gradients, and background images.\n\n5. Display Property:\nDefines how elements behave: block (full width), inline (no new line), inline-block, flex, grid, or none.\n\n6. Flexbox:\nA modern layout system for centering and aligning items. Properties include justify-content, align-items, flex-direction, flex-wrap, gap.\n\n7. CSS Grid:\nTwo-dimensional layout system with rows and columns. Use grid-template-columns, grid-template-rows, and gap to build responsive grids.\n\n8. CSS Units:\nIncludes px, %, em, rem, vh, vw. Relative units enable responsive designs.\n\n9. Transitions & Animations:\nTransitions animate property changes smoothly. Keyframes create animations that run over time.\n\n10. CSS Variables:\nUse custom properties like --primary to create themeable and reusable styles.\n\n11. Positioning:\nControl element placement using static, relative, absolute, fixed, and sticky positioning.\n\n12. Responsive Design:\nUse media queries, mobile-first layouts, and flexible units to ensure the website adapts to all screen sizes.\n\nBy the end of this chapter, you will be confident in creating modern, responsive, and visually appealing designs using CSS.",
+  
+  "JavaScript Essentials": "JavaScript is the programming language of the web, used to create interactive and dynamic behavior in websites. This chapter covers variables, data types, operators, functions, loops, arrays, objects, ES6 features, and asynchronous programming.\n\n1. Introduction to JavaScript:\nJavaScript runs in the browser and controls interactivity like animations, form validation, popups, and dynamic UI updates. It is also used on servers through Node.js.\n\n2. Variables:\nvar (older and function scoped), let (block scoped), and const (block scoped and non-reassignable). Modern JavaScript uses let and const.\n\n3. Data Types:\nPrimitive types include string, number, boolean, null, undefined, symbol, bigint. Reference types include objects, arrays, and functions.\n\n4. Operators:\nIncludes arithmetic (+, -, *, /), comparison (==, ===, !=, >, <), logical (&&, ||, !), and string operators.\n\n5. Functions:\nRegular and arrow functions allow reusable blocks of code. Arrow functions provide cleaner syntax.\n\n6. Conditionals:\nControl flow using if, else if, else, and switch to handle multiple logical cases.\n\n7. Loops:\nRepeat actions using for, while, do-while, and array methods like forEach.\n\n8. Arrays & Methods:\nArrays store lists of items. Common methods include push, pop, map, filter, reduce, and forEach.\n\n9. Objects:\nObjects store key-value data and methods. Access properties with dot notation or bracket notation.\n\n10. Template Literals:\nUse backticks to insert variables inside strings: `Hello, ${name}`.\n\n11. ES6 Features:\nIncludes arrow functions, template literals, spread operator, destructuring, classes, let/const.\n\n12. Promises & Async/Await:\nHandle asynchronous operations like fetching data from APIs using .then() or async/await.\n\n13. Error Handling:\nUse try...catch to capture runtime errors and prevent crashes.\n\n14. Intro to DOM Manipulation:\nUse querySelector, innerHTML, and style properties to modify the webpage dynamically.\n\nBy the end of this chapter, you will be able to write clean, modern JavaScript and understand how dynamic web pages are built.",
+  
+  "DOM Manipulation": "The Document Object Model (DOM) is the interface that represents your webpage as a tree of elements. With DOM manipulation, JavaScript can change HTML, update styles, add new elements, remove elements, and respond to user actions.\n\n1. What is the DOM?\nThe DOM represents each HTML element as an object. JavaScript can access, modify, and interact with this structure to create dynamic behavior.\n\n2. Selecting Elements:\nUse querySelector, querySelectorAll, getElementById, getElementsByClassName, and getElementsByTagName to target elements.\n\n3. Changing Text & HTML:\nUse innerText, textContent, and innerHTML to update the content of elements. innerHTML replaces entire HTML blocks.\n\n4. Styling Elements:\nModify styles with element.style or use classList to add, remove, and toggle CSS classes.\n\n5. Creating Elements:\nUse document.createElement to create a new node, then appendChild or append to insert it into the DOM.\n\n6. Removing Elements:\nCall element.remove() or parent.removeChild(child) to delete elements dynamically.\n\n7. Event Handling:\nListen for user interactions using addEventListener. Common events include click, input, submit, keydown, and scroll.\n\n8. Event Bubbling & Capturing:\nEvents flow from parent to child (capturing) and child to parent (bubbling). Use stopPropagation to stop the event chain.\n\n9. Working with Forms:\nRead input values using input.value, validate fields, and prevent default form submission using e.preventDefault().\n\n10. Attributes & Properties:\nUse getAttribute, setAttribute, and removeAttribute. Access properties like checked, value, and placeholder.\n\n11. DOM Traversal:\nUse parentElement, children, nextElementSibling, and previousElementSibling to navigate the DOM.\n\n12. Cloning & Templates:\nClone existing nodes using cloneNode(true) to duplicate UI components like cards or messages.\n\n13. Fetch & Update DOM:\nCall APIs with fetch, then update DOM elements based on the response.\n\n14. Best Practices:\nUse classList for styling, avoid heavy DOM queries, use event delegation, and avoid unsafe innerHTML.\n\nBy the end of this chapter, you will be able to dynamically update your UI, handle events, build interactive pages, and understand how modern frontend frameworks manipulate the DOM internally.",
+  
+  "Responsive Web Design": "Covers media queries, breakpoints, responsive units, mobile-first design, and adaptive layouts.",
+  
+  "React.js Fundamentals": "Introduction to components, props, state, hooks, conditional rendering, lists, and React Router.",
+  
+  "Node.js Basics": "Covers server-side JS, Express.js, API routes, middleware, and building scalable backend apps.",
+  
+  "REST APIs": "Learn REST architecture, endpoints, request/response, HTTP methods, and building APIs with Express.",
+  
+  "Authentication & Security": "Covers JWT, bcrypt, OAuth, session management, CSRF, XSS, and secure API design.",
+  
+  "Databases for Web Apps": "Learn how MongoDB, SQL, and NoSQL databases store and manage web app data.",
+  
+  "Deployment & Hosting": "Understand hosting on GitHub Pages, Netlify, Vercel, Render, and cloud servers.",
+
+
+
+  "Introduction to Databases": "This chapter explains what databases are, why we need them, and how DBMS improves data management.",
+  
+  "Data Models": "Covers relational, hierarchical, network, and object-oriented data models.",
+  
+  "ER Model": "Explains entities, attributes, keys, relationships, and ER diagrams.",
+  
+  "Relational Model": "Learn tables, tuples, relations, primary keys, and foreign keys.",
+  
+  "SQL Basics": "Covers SELECT, INSERT, UPDATE, DELETE, filtering and sorting.",
+  
+  "Joins & Subqueries": "Learn inner, left, right, full joins, nested queries.",
+  
+  "Normalization": "Covers 1NF, 2NF, 3NF, BCNF for reducing redundancy.",
+  
+  "Transactions": "Learn ACID properties, concurrency control, isolation levels.",
+  
+  "Indexing & Query Optimization": "Covers B-trees, hashing, indexing for fast queries.",
+  
+  "NoSQL Databases": "Explains document, key-value, graph and column databases.",
+
+
+
+  "Introduction to OS": "Learn what operating systems do, their components, and services.",
+  
+  "System Architecture": "Covers system calls, kernel vs user mode, monolithic and microkernel.",
+  
+  "Processes & Threads": "Explain process creation, states, PCB, threads, multithreading.",
+  
+  "CPU Scheduling": "Algorithms like FCFS, SJF, Round Robin, Priority Scheduling.",
+  
+  "Memory Management": "Covers fragmentation, allocation strategies.",
+  
+  "Paging & Segmentation": "Logical vs physical memory, page tables, TLB.",
+  
+  "Virtual Memory": "Explains page faults, swapping, thrashing.",
+  
+  "File System": "Inodes, directories, allocation methods.",
+  
+  "Deadlocks": "Prevention, avoidance, detection, banker’s algorithm.",
+  
+  "Device Management": "Drivers, interrupts, IO handling.",
+
+
+
+  "Introduction to Networking": "Explains communication models, LAN, WAN, MAN, and protocols.",
+  
+  "OSI Model": "Seven-layer model, responsibilities of each.",
+  
+  "TCP/IP Architecture": "Real-world network protocol suite.",
+  
+  "IP Addressing & Subnetting": "IPv4/IPv6, subnet masks, CIDR.",
+  
+  "Routing Algorithms": "RIP, OSPF, BGP, shortest path algorithms.",
+  
+  "Transport Layer: TCP vs UDP": "Connection-oriented vs connectionless protocols.",
+  
+  "Application Layer Protocols": "HTTP, DNS, FTP, SMTP.",
+  
+  "Network Security": "Firewalls, encryption, SSL/TLS, VPNs.",
+
+
+
+  "Introduction to DSA": "Why algorithms matter and how to measure complexity.",
+  
+  "Arrays": "Basics, operations, sliding window techniques.",
+  
+  "Strings": "String manipulation, pattern searching.",
+  
+  "Linked Lists": "Singly, doubly, circular lists, operations.",
+  
+  "Stacks & Queues": "Implementation and applications.",
+  
+  "Trees": "Binary trees, traversals, DFS/BFS.",
+  
+  "Graphs": "Graph representation, BFS/DFS, shortest paths.",
+  
+  "Recursion & Backtracking": "Call stack, recursion tree, N-queens.",
+  
+  "Dynamic Programming": "Memoization, tabulation, classic problems.",
+  
+  "Greedy Algorithms": "Optimal choices, interval scheduling.",
+  
+  "Sorting Algorithms": "Merge sort, quicksort, heapsort.",
+  
+  "Searching Techniques": "Binary search, BFS, DFS.",
+
+
+
+  "Introduction to Machine Learning": "Covers ML basics, algorithms, and applications.",
+  
+  "Types of Machine Learning": "Supervised, unsupervised, reinforcement learning.",
+  
+  "Data Preprocessing": "Scaling, encoding, handling missing values.",
+  
+  "Linear Regression": "Predictive modeling using least squares.",
+  
+  "Logistic Regression": "Binary classification mathematics.",
+  
+  "Decision Trees": "Entropy, Gini index, splitting.",
+  
+  "Support Vector Machines": "Hyperplanes, linear & non-linear classification.",
+  
+  "Clustering Algorithms": "K-means, hierarchical clustering.",
+  
+  "Model Evaluation": "Accuracy, precision, recall, F1 scores.",
+  
+  "Neural Networks": "Perceptrons, activation functions, layers.",
+
+
+
+  "Introduction to OOP": "What OOP solves and why it’s used.",
+  
+  "Classes & Objects": "Blueprints and instances.",
+  
+  "Encapsulation": "Hiding data with getters/setters.",
+  
+  "Inheritance": "Reusing properties and methods.",
+  
+  "Polymorphism": "Method overloading/overriding.",
+  
+  "Abstraction": "Hiding complexity.",
+  
+  "Interfaces": "Contracts for classes.",
+  
+  "Exception Handling": "Try, catch, custom exceptions.",
+  
+  "File Handling": "Reading and writing files.",
+
+
+
+  "Logic & Propositions": "Boolean logic, statements, truth tables.",
+  
+  "Sets & Functions": "Operations, mappings, domain-range.",
+  
+  "Relations": "Equivalence relations, partial orderings.",
+  
+  "Combinatorics": "Permutations, combinations.",
+  
+  "Probability": "Random variables, distributions.",
+  
+  "Matrices": "Matrix operations, inverses.",
+  
+  "Calculus Basics": "Limits, derivatives, integrals.",
+  
+  "Linear Algebra": "Vectors, eigenvalues, eigenvectors.",
+  
+  "Graph Theory": "Graphs, trees, traversal.",
+  
+
+
+  "Cloud Fundamentals": "Cloud concepts, benefits, deployment models.",
+  
+  "Virtualization": "Hypervisors, VMs, containerization.",
+  
+  "SaaS, PaaS, IaaS": "Service delivery models.",
+  
+  "AWS Basics": "EC2, S3, Lambda, IAM basics.",
+  
+  "Azure Basics": "Azure compute, blob storage.",
+  
+  "Containers & Docker": "Docker images, containers, registries.",
+  
+  "Kubernetes": "Clusters, pods, deployments.",
+  
+  "Cloud Security": "IAM, encryption, network security.",
+  
+  "Serverless Computing": "Lambda, functions-as-service."
+}
+
+
+
+
+

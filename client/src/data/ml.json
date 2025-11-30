@@ -1,0 +1,312 @@
+{
+  "Introduction to Machine Learning": {
+    "title": "Introduction to Machine Learning",
+    "description": "This chapter introduces Machine Learning concepts, why ML matters, and how machines learn patterns from data.",
+    "sections": {
+      "1. What is Machine Learning?": {
+        "details": [
+          "Machine Learning enables computers to learn from data without explicit programming.",
+          "ML models identify patterns and make predictions or decisions.",
+          "Used in recommendation systems, fraud detection, NLP, self-driving cars, etc."
+        ]
+      },
+      "2. How ML Works": {
+        "details": [
+          "Data → Model Training → Prediction.",
+          "Algorithms learn mathematical relationships between inputs and outputs.",
+          "Model performance improves with more data and tuning."
+        ]
+      },
+      "3. Real-World Applications": {
+        "details": [
+          "Spam filtering, recommendation engines.",
+          "Face recognition, handwriting detection.",
+          "Forecasting (sales, weather), anomaly detection."
+        ]
+      },
+      "summary": "Machine Learning helps build intelligent systems by learning from historical data and predicting future outcomes."
+    }
+  },
+
+  "Types of Machine Learning": {
+    "title": "Types of Machine Learning",
+    "description": "This chapter explains the categories of ML based on learning style: supervised, unsupervised, and reinforcement learning.",
+    "sections": {
+      "1. Supervised Learning": {
+        "details": [
+          "Model learns from labeled data.",
+          "Examples: classification (spam detection), regression (house price prediction)."
+        ]
+      },
+      "2. Unsupervised Learning": {
+        "details": [
+          "Model learns from unlabeled data by finding hidden patterns.",
+          "Examples: clustering, dimensionality reduction."
+        ]
+      },
+      "3. Reinforcement Learning": {
+        "details": [
+          "Learning through rewards and penalties.",
+          "Used in robotics, gaming, autonomous systems."
+        ]
+      },
+      "summary": "Different learning types suit different applications — classification, clustering, control systems, and more."
+    }
+  },
+
+  "Data Preprocessing": {
+    "title": "Data Preprocessing",
+    "description": "Data preprocessing improves data quality, making ML models accurate and reliable.",
+    "sections": {
+      "1. Handling Missing Values": {
+        "details": [
+          "Remove missing rows/columns.",
+          "Impute using mean, median, or mode.",
+          "Use advanced imputation like KNN."
+        ]
+      },
+      "2. Encoding Categorical Data": {
+        "details": [
+          "Label Encoding for ordinal categories.",
+          "One-Hot Encoding for non-ordinal categories."
+        ]
+      },
+      "3. Feature Scaling": {
+        "details": [
+          "Standardization (Z-score normalization).",
+          "Min-Max scaling for transforming values to [0,1]."
+        ]
+      },
+      "4. Data Splitting": {
+        "details": [
+          "Train-test split ensures unbiased model evaluation.",
+          "Common split: 80% training, 20% testing."
+        ]
+      },
+      "summary": "Clean, well-processed data significantly improves ML model accuracy and stability."
+    }
+  },
+
+  "Linear Regression": {
+    "title": "Linear Regression",
+    "description": "Linear Regression predicts continuous values by fitting a straight line to data.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Assumes linear relationship between input (X) and output (Y).",
+          "Model: Y = mX + b."
+        ]
+      },
+      "2. Cost Function": {
+        "details": [
+          "Mean Squared Error (MSE) measures prediction error.",
+          "Goal: minimize the error."
+        ]
+      },
+      "3. Gradient Descent": {
+        "details": [
+          "Optimization method to update model weights.",
+          "Reduces cost function step by step."
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Sales forecasting.",
+          "Predicting house prices.",
+          "Trend analysis."
+        ]
+      },
+      "summary": "Linear regression is the simplest and most widely used predictive modeling technique."
+    }
+  },
+
+  "Logistic Regression": {
+    "title": "Logistic Regression",
+    "description": "Logistic Regression is used for binary classification by modeling probabilities using the sigmoid function.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Predicts values between 0 and 1 using sigmoid activation.",
+          "Ideal for yes/no classification."
+        ]
+      },
+      "2. Sigmoid Function": {
+        "details": [
+          "S(x) = 1 / (1 + e^-x).",
+          "Converts linear output into probability."
+        ]
+      },
+      "3. Decision Boundary": {
+        "details": [
+          "If probability > 0.5 → class 1.",
+          "Else → class 0."
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Spam detection.",
+          "Disease prediction.",
+          "Customer churn prediction."
+        ]
+      },
+      "summary": "Logistic Regression is fundamental for binary classification problems."
+    }
+  },
+
+  "Decision Trees": {
+    "title": "Decision Trees",
+    "description": "Decision Trees split data into branches based on conditions, helping solve classification and regression tasks.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "Tree-like structure of decisions.",
+          "Root → decision nodes → leaf nodes."
+        ]
+      },
+      "2. Splitting Criteria": {
+        "details": [
+          "Entropy and Information Gain (ID3 algorithm).",
+          "Gini Index (CART algorithm)."
+        ]
+      },
+      "3. Pros & Cons": {
+        "details": [
+          "Easy to interpret and visualize.",
+          "Prone to overfitting without pruning."
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Loan approval systems.",
+          "Medical diagnosis.",
+          "Customer segmentation."
+        ]
+      },
+      "summary": "Decision trees are versatile and interpretable models for both regression and classification."
+    }
+  },
+
+  "Support Vector Machines": {
+    "title": "Support Vector Machines",
+    "description": "SVMs classify data by finding the optimal hyperplane that separates classes with maximum margin.",
+    "sections": {
+      "1. Concept": {
+        "details": [
+          "SVM finds the best boundary between classes.",
+          "Maximizes the margin between support vectors."
+        ]
+      },
+      "2. Linear vs Non-Linear SVM": {
+        "details": [
+          "Linear SVM works for linearly separable data.",
+          "Kernel trick helps classify non-linear data."
+        ]
+      },
+      "3. Kernel Functions": {
+        "details": [
+          "Polynomial kernel.",
+          "RBF (Gaussian) kernel.",
+          "Sigmoid kernel."
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Image classification.",
+          "Face recognition.",
+          "Bioinformatics."
+        ]
+      },
+      "summary": "SVMs are powerful classifiers suitable for complex and high-dimensional datasets."
+    }
+  },
+
+  "Clustering Algorithms": {
+    "title": "Clustering Algorithms",
+    "description": "Clustering groups similar data points together without labeled data.",
+    "sections": {
+      "1. K-Means Clustering": {
+        "details": [
+          "Divides data into K clusters.",
+          "Centers updated using mean of points."
+        ]
+      },
+      "2. Hierarchical Clustering": {
+        "details": [
+          "Agglomerative (bottom-up) approach.",
+          "Forms a dendrogram for cluster visualization."
+        ]
+      },
+      "3. Applications": {
+        "details": [
+          "Customer segmentation.",
+          "Grouping similar images.",
+          "Document clustering."
+        ]
+      },
+      "summary": "Clustering discovers natural groupings in data without requiring labels."
+    }
+  },
+
+  "Model Evaluation": {
+    "title": "Model Evaluation",
+    "description": "Model evaluation measures how well an ML model performs on unseen data using accuracy metrics and confusion matrix.",
+    "sections": {
+      "1. Metrics for Classification": {
+        "details": [
+          "Accuracy — overall correctness.",
+          "Precision — correct positive predictions.",
+          "Recall — ability to detect positives.",
+          "F1 Score — harmonic mean of precision and recall."
+        ]
+      },
+      "2. Confusion Matrix": {
+        "details": [
+          "TP, FP, TN, FN breakdown.",
+          "Helps detect model errors."
+        ]
+      },
+      "3. Overfitting vs Underfitting": {
+        "details": [
+          "Overfitting → memorizes training data.",
+          "Underfitting → fails to learn patterns.",
+          "Solved using regularization, more data, tuning."
+        ]
+      },
+      "summary": "Evaluating ML models ensures reliability, fairness, and good real-world performance."
+    }
+  },
+
+  "Neural Networks": {
+    "title": "Neural Networks",
+    "description": "Neural Networks simulate the human brain using interconnected neurons to model complex relationships.",
+    "sections": {
+      "1. Perceptron": {
+        "details": [
+          "Basic unit of neural networks.",
+          "Performs weighted sum and activation."
+        ]
+      },
+      "2. Activation Functions": {
+        "details": [
+          "ReLU — fast and widely used.",
+          "Sigmoid — probability outputs.",
+          "Tanh — centered outputs."
+        ]
+      },
+      "3. Multi-Layer Networks": {
+        "details": [
+          "Input layer → Hidden layers → Output layer.",
+          "Backpropagation updates weights using gradients."
+        ]
+      },
+      "4. Applications": {
+        "details": [
+          "Image recognition (CNN).",
+          "NLP (RNN/Transformers).",
+          "Speech recognition and robotics."
+        ]
+      },
+      "summary": "Neural Networks form the base of modern deep learning systems powering AI applications."
+    }
+  }
+}
