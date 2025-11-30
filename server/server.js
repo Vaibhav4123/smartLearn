@@ -14,9 +14,9 @@ connectDB();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://smart-learnfrontend-git-main-vaibhav-sontakke-s-projects.vercel.app/",
-    "https://smart-learnfrontend.vercel.app/",
-    "https://smart-learnclient.vercel.app/"
+    "https://smart-learnfrontend-git-main-vaibhav-sontakke-s-projects.vercel.app",
+    "https://smart-learnfrontend.vercel.app",
+    "https://smart-learnclient.vercel.app"
   ],
   credentials: true,                
   methods: ["GET", "POST", "PUT", "DELETE"],
