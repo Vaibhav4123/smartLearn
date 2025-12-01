@@ -271,13 +271,21 @@ export const sendOtp = async (req, res) => {
       { upsert: true }
     );
 
+
+    console.log("📨 Sending registration OTP email...", {
+      to: emailLower,
+      subject: `Your SmartLearn Account Verification Code: ${otp}`,
+      otp,
+    });
+
+
     await sendEmail({
       to: emailLower,
       // subject: "SmartLearn Registration OTP",
       subject: `Your SmartLearn Account Verification Code: ${otp}`,
       html: registrationOtpTemplate(otp),
     });
-    
+
     res.json({ message: "OTP sent", email: emailLower });
 
   } catch (err) {
