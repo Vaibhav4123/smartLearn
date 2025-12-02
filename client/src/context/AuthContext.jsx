@@ -109,6 +109,7 @@ const login = async (email, password) => {
     toast.error("Please enter email and password");
     return;
   }
+  
 
   // Basic email check
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

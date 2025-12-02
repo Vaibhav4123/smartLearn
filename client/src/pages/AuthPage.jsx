@@ -168,7 +168,8 @@ export default function AuthPage() {
     }
 
     if (!res.ok) {
-      throw new Error(data.message || "Failed to send OTP");
+      console.log(data.message||"Failed to send OTP");
+      throw new Error(data.message || "Failed to send OTP");   
     }
 
     // Success
