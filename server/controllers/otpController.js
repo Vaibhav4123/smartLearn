@@ -474,9 +474,9 @@
 // AUTH + OTP CONTROLLER (GMAIL SMTP VERSION)
 // ===============================================
 
+
 import Otp from "../models/Otp.js";
 import User from "../models/User.js";
-import Otp from "../models/Otp.js"
 import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
