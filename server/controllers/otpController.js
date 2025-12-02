@@ -15,6 +15,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER, // Gmail email
     pass: process.env.SMTP_PASS, // Gmail app password
   },
+  tls: {
+    rejectUnauthorized: false,
+  },
 });
 
 
@@ -140,13 +143,20 @@ export const forgotPasswordSendOtp = async (req, res) => {
       { otp, expiresAt: Date.now() + 5 * 60 * 1000, verified: false },
       { upsert: true }
     );
-
+    
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
       subject: "SmartLearn Password Reset OTP",
       html:resetPasswordOtpTemplate(otp),
     });
+    console.log(
+      {from: process.env.EMAIL_USER,
+      to: email,
+      subject: "SmartLearn Password Reset OTP",
+      html:resetPasswordOtpTemplate(otp),}
+    );
+    console.log("forgot password");
 
     res.json({ message: "Reset OTP sent" });
 
