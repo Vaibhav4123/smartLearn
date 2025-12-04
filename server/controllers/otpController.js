@@ -16,7 +16,8 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS, // Gmail app password
   },
   tls: {
-    rejectUnauthorized: false,
+    // rejectUnauthorized: false,
+    ciphers: "SSLv3",//for outlook.com
   },
 });
 
